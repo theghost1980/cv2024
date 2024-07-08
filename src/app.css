@@ -1,80 +1,22 @@
 /* Global vars */
 :root {
-    /* typography */
-    --primary-header: "Montserrat", serif;
-    --secondary-header: "Lora", sans-serif;
-    --content-small: "Hind Madurai", sans-serif;
+  /* typography */
+  --primary-header: "Montserrat", serif;
+  --secondary-header: "Lora", sans-serif;
+  --content-small: "Hind Madurai", sans-serif;
 
-    /* colors */
-    --darker-tone: #232629;
-    --lighter-tone: #fffefe;
-    --ceruleo-light: #1fdcff;
-    --vibrant-orange: #e46c3f;
+  /* colors */
+  --darker-tone: #232629;
+  --lighter-tone: #fffefe;
+  --ceruleo-light: #1fdcff;
+  --vibrant-orange: #e46c3f;
 
-    /* borders */
-    --border-ligther: 1px solid var(--lighter-tone);
-    --border-darker: 1px solid var(--darker-tone);
-  }
+  /* borders */
+  --border-ligther: 1px solid var(--lighter-tone);
+  --border-darker: 1px solid var(--darker-tone);
+}
 
 .logo-svg {
-    width: 150px;
-    height: auto;
+  width: 150px;
+  height: auto;
 }
-
-/* //TODO move to home.css */
-.hero-saturno {
-    background-position:bottom;
-}
-.hero-section{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: calc(100% - 20px);
-    padding-left: 20px;
-    height: 100vh;
-    z-index: 2;
-    .title-container{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        font-family: var(--primary-header);
-        font-size: 4.5vw;
-        font-weight: bold;
-        justify-content: flex-start;
-        text-shadow: 3px 3px 5px var(--darker-tone);
-        .title-part-one{
-            color: var(--lighter-tone);
-        }
-        .title-part-two{
-            margin-left: 40px;
-            color: var(--ceruleo-light);
-        }
-        @media (min-width: 1240px) {
-            flex-direction: column;
-            .title-part-two{
-                margin-left: 12%;
-            }
-        }
-    }
-    .text-hero{
-        text-align: left;
-        max-width: 60%;
-        margin-top: 20px;
-        padding-left: 10px;
-        font-family: var(--secondary-header);
-        font-style: italic;
-        font-size: 28px;
-        color: var(--lighter-tone);
-        text-shadow: 3px 3px 5px var(--darker-tone);
-    }
-    .call-to-action-container{
-        margin-top: 18px;
-        display: flex;
-        flex-direction: row;
-        width: 50%;
-        height: auto;
-        column-gap: 12px;
-    }
-}
-/* end to move */

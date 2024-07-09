@@ -1,29 +1,58 @@
-import React from 'react';
-import HeroJPG from '../../../assets/images/bg/hero.jpg';
-import HeroSaturnoPNG from '../../../assets/images/bg/hero_saturno.png';
-import './background-image.css';
+import React from "react";
+import "./background-image.css";
 
-type BgImageType = 'hero' | "hero_saturno";
+//TODO create enum file, move
+export enum BgImageFileName {
+  HERO = "hero.jpg",
+  HERO_SATURNO = "hero_saturno.png",
+  HOME_OFFICE = "home_office.jpg",
+  ABOUT_ME = "about_venezuela.jpg",
+  WORK = "work_experience.jpg",
+}
 
 interface Props {
-    bgImage: BgImageType;
-    additionalClassname?: string;
-    overlayColor?: string;
-};
+  bgImageFileName: BgImageFileName;
+  additionalClassname?: string;
+  overlayColor?: {
+    red: number;
+    green: number;
+    blue: number;
+    alpha: number;
+  };
+}
 
-export const BackgroundImage = ({ bgImage, additionalClassname, overlayColor} : Props) => {
-  const getBgImage = (image: BgImageType) => {
-    switch (image) {
-      case 'hero':
-        return HeroJPG;
-      case 'hero_saturno':
-        return HeroSaturnoPNG;
-    }
+export const BackgroundImage = ({
+  bgImageFileName,
+  additionalClassname,
+  overlayColor,
+}: Props) => {
+  const renderOverlay = () => {
+    const { red, green, blue, alpha } = overlayColor;
+    return (
+      <div
+        id="bg_overlay"
+        style={{
+          display: "block",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          backgroundColor: `rgba(${red},${green},${blue},${alpha})`,
+          zIndex: 1,
+        }}
+      />
+    );
   };
 
   return (
-    <div className={`bg-image-container ${additionalClassname} ${overlayColor ? 'bg-image-color-overlay' : ''}`} style={{
-        backgroundImage:   `url(${getBgImage(bgImage)})`,
-    }} />
-  )
-}
+    <div
+      className={`bg-image-container ${additionalClassname}`}
+      style={{
+        backgroundImage: `url(./assets/images/bg/${bgImageFileName})`,
+      }}
+    >
+      {overlayColor && renderOverlay()}
+    </div>
+  );
+};

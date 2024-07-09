@@ -19,7 +19,7 @@ export const Button = ({
     <button
       title={title}
       onClick={onClick}
-      className={`button ${buttonStyleType}`}
+      className={`button ${buttonStyleType} ${additionalClassname}`}
     >
       {t(`button.${title}`)}
     </button>

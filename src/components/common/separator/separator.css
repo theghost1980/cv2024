@@ -1,0 +1,8 @@
+.title {
+  text-align: center;
+  font-family: var(--primary-header);
+  font-size: 44px;
+  font-weight: bold;
+  color: var(--text-lighter);
+  text-shadow: var(--shadow-black-half);
+}

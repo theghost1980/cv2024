@@ -1,0 +1,6 @@
+.hover-animation {
+  transition: all 0.3s step-start;
+  &:hover {
+    transform: scale(1.2);
+  }
+}

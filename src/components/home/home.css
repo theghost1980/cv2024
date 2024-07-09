@@ -1,5 +1,6 @@
 .hero-saturno {
   background-position: bottom;
+  animation: grayColorToUnset 7s;
 }
 .hero-section {
   position: relative;
@@ -19,6 +20,7 @@
     font-weight: bold;
     justify-content: flex-start;
     text-shadow: 3px 3px 5px var(--darker-tone);
+    animation: fadeIn 3s;
     .title-part-one {
       color: var(--lighter-tone);
     }

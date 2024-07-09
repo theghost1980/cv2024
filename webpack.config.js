@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 module.exports = {
   mode: "development",
   entry: "./src/index.tsx",
@@ -35,7 +36,7 @@ module.exports = {
       },
       {
         type: "asset",
-        test: /\.(png|jpg|gif)$/i,
+        test: /\.(png|jp(e*)g|svg|gif)$/,
       },
     ],
   },
@@ -47,6 +48,9 @@ module.exports = {
       template: "public/index.html",
       //TODO below add favicon
       //   favicon: "./src/assets/svg/saturno.svg",
+    }),
+    new CopyPlugin({
+      patterns: [{ from: "src/assets", to: "assets" }],
     }),
   ],
 };

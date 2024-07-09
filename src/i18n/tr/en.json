@@ -8,6 +8,23 @@
   },
   "button": {
     "about_me": "About me",
-    "contact_me": "Get in touch"
+    "contact_me": "Get in touch",
+    "work_experience": "Work experience",
+    "projects": "Projects",
+    "faq": "F.A.Q",
+    "about_website": "About the website",
+    "home": "Home",
+    "my_design_process": "My process"
+  },
+  "navigation": {
+    "menu": "Menu",
+    "page_title": {
+      "about_me": "Nice to meet you",
+      "work_experience": "Work experience"
+    }
+  },
+  "common": {
+    "work": "Work",
+    "projects": "Projects"
   }
 }

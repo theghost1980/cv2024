@@ -3,21 +3,26 @@ import {
   BackgroundImage,
   BgImageFileName,
 } from "../common/background-image/background-image";
+import ImageSlider from "../common/image-slider/image-slider";
 import "./about.css";
 
 export const About = () => {
   return (
-    <main>
+    <main className="about-page">
       <BackgroundImage
         bgImageFileName={BgImageFileName.ABOUT_ME}
         overlayColor={{
           red: 220,
           blue: 220,
           green: 220,
-          alpha: 0.5,
+          alpha: 0.9,
         }}
       />
-      <div className="about">//TODO</div>
+      <div className="about">
+        <div className="section-container">
+          <ImageSlider />
+        </div>
+      </div>
     </main>
   );
 };

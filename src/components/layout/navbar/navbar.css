@@ -46,7 +46,7 @@ nav {
             column-gap: 10px;
             .nav-page-title {
               font-family: var(--primary-header);
-              font-weight: bold;
+              font-weight: 400;
               font-size: 44px;
             }
           }

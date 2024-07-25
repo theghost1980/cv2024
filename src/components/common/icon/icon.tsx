@@ -6,6 +6,7 @@ export enum IconPathName {
   HAMBURGUER_MENU = "menu_navbar/hamburguer",
   CLOSE = "common/close",
   HOME = "menu_navbar/home",
+  SATURN = "common/saturn",
 }
 
 interface Props {

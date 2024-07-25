@@ -1,5 +1,6 @@
 .hero-saturno {
-  background-position: bottom;
+  /* background-position: bottom; */
+  background-position: bottom 0px right -90px;
   animation: grayColorToUnset 7s;
 }
 .hero-section {

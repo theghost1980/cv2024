@@ -8,6 +8,12 @@ export enum BgImageFileName {
   HOME_OFFICE = "home_office.jpg",
   ABOUT_ME = "about_venezuela.jpg",
   WORK = "work_experience.jpg",
+  KEYCHAIN_CARD = "/cards/keychain-card.png",
+  HIVE_KEYCHAIN_CARD = "/cards/hive-keychain-card.png",
+  ECCEL_CARD = "/cards/eccel-card.png",
+  ENA_CARD = "/cards/ena-card.jpg",
+  FREELANCE_CARD = "/cards/freelance-card.png",
+  BLOCKVEN_CARD = "/cards/blockven-card.png",
 }
 
 interface Props {

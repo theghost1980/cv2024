@@ -7,6 +7,8 @@ import { RootLayout } from "./components/layout/root-layout";
 import { WorkExperience } from "./components/work/work-experience";
 import "./i18n/config";
 
+//TODO important check package.json and remove unused
+
 //TODO bellow define enum for routes.
 //TODO error page
 const router = createBrowserRouter([

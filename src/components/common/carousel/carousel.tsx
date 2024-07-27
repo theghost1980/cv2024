@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./carousel.css";
+//TODO remove component & css
 
 type CarouselItem = {
   id: number;

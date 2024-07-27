@@ -1,0 +1,13 @@
+.work-page {
+  display: flex;
+  flex: 1;
+  .work-section {
+    margin-top: 60px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 60px);
+    justify-content: center;
+    padding-left: 8px;
+  }
+}

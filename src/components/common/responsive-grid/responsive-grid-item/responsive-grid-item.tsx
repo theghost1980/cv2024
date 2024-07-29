@@ -1,4 +1,6 @@
+import { t } from "i18next";
 import React, { useState } from "react";
+import ImageExpandable from "../../../image-expandable/image-expandable";
 import { Icon, IconPathName } from "../../icon/icon";
 import SpanLink from "../../span-link/span-link";
 import "./responsive-grid-item.css";
@@ -38,7 +40,7 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
               {i.logoPNG}
               <div
                 className={`header-title-small text-centered ${
-                  i.include_flag_in_title ? "div_row" : ""
+                  i.include_flag_in_title ? "div-row-centered" : ""
                 }`}
               >
                 {i.include_flag_in_title && (
@@ -83,7 +85,7 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
                   {i.title}
                 </div>
                 <div className="sub-header-title-italic content-subheader">
-                  at {renderCompanyLink(i)}
+                  {t("common.at")} {renderCompanyLink(i)}
                 </div>
                 <div className="position-duration-container">
                   <div className="icon-text">
@@ -110,10 +112,52 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
                   </div>
                 </div>
               </div>
-              <div className="content-text orange">TODO</div>
-              <div className="content-text ceruleo-medium last">TODO</div>
+              <div className="content-text orange">
+                <div className="text-decription">{i.description}</div>
+              </div>
+              <div className="content-text ceruleo-medium last">
+                {i.acomplishments && (
+                  <div>
+                    <div className="title-italic margin-bottom-max">
+                      {t("common.what_was_acommplished")}
+                    </div>
+                    <ul className="ul-default-list">
+                      {i.acomplishments.map((a: string, index: number) => {
+                        return (
+                          <li key={`card-key-point-${index}`}>
+                            <div className="div-row-aligned">
+                              <Icon
+                                iconPathName={IconPathName.CHECK}
+                                color="var(--vibrant-orange-darker)"
+                                width={24}
+                                height={24}
+                                additionalClassName="icon-class-default"
+                              />
+                              <div className="content-short margin-left-min">
+                                {a}
+                              </div>
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                )}
+              </div>
             </div>
-            <div className="content-images"></div>
+            {i.images && (
+              <div className="content-images">
+                {i.images.map((i: any) => {
+                  return (
+                    <ImageExpandable
+                      key={i}
+                      source={i}
+                      className="content-image"
+                    />
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       )}

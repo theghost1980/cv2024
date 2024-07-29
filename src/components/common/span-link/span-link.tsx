@@ -8,7 +8,11 @@ interface Props {
 
 const SpanLink = ({ titleLink, link }: Props) => {
   return (
-    <span className="text-link" onClick={() => window.open(link, "")}>
+    <span
+      title={`visit ${link}`}
+      className="text-link"
+      onClick={() => window.open(link, "")}
+    >
       {titleLink}
     </span>
   );

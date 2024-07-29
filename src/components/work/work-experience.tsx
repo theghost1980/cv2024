@@ -19,6 +19,17 @@ const items = [
     companyLinkURL: "https://hive-keychain.com/",
     position: "Fully Remote",
     time: "2 years 7 months",
+    description:
+      "Implement, develop, test and refactor features for a chrome wallet extension and mobile app, using modern tools like Reactjs, Typescript, Jest, C.I, Webpack, Bootstrap, react native, android studio, JAVA, etc. Hotfixes and code bugging was a day to day task, for both apps being used for +10,000 users.",
+    acomplishments: [
+      "Implement more than 12 new features in the extension and mobile app",
+      "Developed the CI-testing platform from scratch for a large code base",
+      "Delivered clean and reusable code under very strict control standards",
+    ],
+    images: [
+      "./assets/images/work/keychain/keychain-work-1.png",
+      "./assets/images/work/keychain/keychain-work-2.png",
+    ],
   },
   {
     id: "02",
@@ -31,6 +42,18 @@ const items = [
     companyLinkURL: "https://hive-engine.com/",
     position: "Fully Remote",
     time: "5 months",
+    description:
+      "Plan, design and deliver a full platform based in web3, coding the backend and frontend. The real challenge was making this project in a short timeframe, besides that, learn about this web3 network and implement the best practices to deliver a good product.",
+    acomplishments: [
+      "Successfully handle backend auth, content CDN & NFTs creation",
+      "Develop the frontend using GatsbyJs, React and modern UI/UX structures",
+      "Implement and lead this project in 5 months",
+    ],
+    images: [
+      "./assets/images/work/jobaboard/jobaboard-work-1.png",
+      "./assets/images/work/jobaboard/jobaboard-work-2.png",
+      "./assets/images/work/jobaboard/jobaboard-work-3.png",
+    ],
   },
   {
     id: "03",

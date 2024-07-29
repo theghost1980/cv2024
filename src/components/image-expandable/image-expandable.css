@@ -1,0 +1,8 @@
+.full-view-image {
+  cursor: zoom-out;
+  border-radius: 12px;
+  max-width: 98%;
+  max-height: 98%;
+  display: block;
+  margin: auto;
+}

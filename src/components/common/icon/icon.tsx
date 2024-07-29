@@ -14,6 +14,7 @@ export enum IconPathName {
   FLAG_UNITED_STATES = "flag/united-states-flag",
   POSITION_INDICATOR = "common/position-indicator",
   TIME = "common/time",
+  CHECK = "common/check",
 }
 
 export enum LogoPathName {

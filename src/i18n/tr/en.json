@@ -25,6 +25,8 @@
   },
   "common": {
     "work": "Work",
-    "projects": "Projects"
+    "projects": "Projects",
+    "what_was_acommplished": "What was acomplished?",
+    "at": "at"
   }
 }

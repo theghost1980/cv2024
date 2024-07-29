@@ -78,10 +78,27 @@
   }
 
   .card-overlay-content {
+    /* Scroll bar */
+    /* width */
+    ::-webkit-scrollbar {
+      width: 4px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: var(--ceruleo-medium);
+      border-radius: 10px;
+    }
+    /* end scrollbar */
     display: flex;
     flex-direction: row;
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
     background-color: var(--grayish-bg);
     border-radius: 12px;
     padding: 12px;
@@ -144,7 +161,20 @@
       flex-direction: column;
       width: 40%;
       height: 100%;
-      background-color: (--gray-medium);
+      background-color: (var(--gray-medium));
+      justify-content: space-evenly;
+      overflow: auto;
+      box-shadow: var(--box-shadow-extra-min);
+      border-radius: 12px;
+      row-gap: 8px;
+
+      .content-image {
+        padding: 8px;
+        border-radius: 12px;
+        max-height: 45% !important;
+        max-width: 600px !important;
+        cursor: zoom-in;
+      }
     }
   }
 }

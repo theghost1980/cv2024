@@ -90,7 +90,7 @@ const items = [
     position: "Fully In-place",
     time: "1 year 5 months",
     description:
-      "Provide assistance, nursery and professional home care to many clients all across United Kingdom. My main challenge was adapting myself to client's needs and care. It was an amazing opportunity to take care of people in need, learn about British Culture and language.",
+      "Provide assistance, nursery and professional home care to many clients all across United Kingdom. My main challenge was adapting myself to client's needs and care. It was an amazing opportunity to take care of people in need, learn about British Culture and language. Even when it wasn't my main career it was a life time opportunity to grow as a human being.",
     acomplishments: [
       "Deliver human care and successfully fulfill client's necesities",
       "Provide professional assistance to at least 5 clients, making their live easier and happier",

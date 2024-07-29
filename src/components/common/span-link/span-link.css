@@ -1,0 +1,8 @@
+.text-link {
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

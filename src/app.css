@@ -65,11 +65,6 @@
   text-shadow: var(--shadow-black-minimum);
 }
 
-/* Global text links */
-.text-link {
-  text-decoration: underline;
-}
-
 /* Global divs */
 .div_row {
   display: flex;

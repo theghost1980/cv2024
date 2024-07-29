@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Icon, IconPathName } from "../../icon/icon";
+import SpanLink from "../../span-link/span-link";
 import "./responsive-grid-item.css";
 
 interface Props {
@@ -8,6 +9,14 @@ interface Props {
 
 const ResponsiveGridItem = ({ item: i }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const renderCompanyLink = (i: any) => {
+    return i.companyLinkURL ? (
+      <SpanLink titleLink={i.companyName} link={i.companyLinkURL} />
+    ) : (
+      i.companyName
+    );
+  };
 
   return (
     <>
@@ -74,7 +83,7 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
                   {i.title}
                 </div>
                 <div className="sub-header-title-italic content-subheader">
-                  at <span className="text-link">{i.companyName}</span>
+                  at {renderCompanyLink(i)}
                 </div>
                 <div className="position-duration-container">
                   <div className="icon-text">

@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React, { useState } from "react";
 import "./image-expandable.css";
 
@@ -16,14 +17,16 @@ const ImageExpandable = ({ className, source }: Props) => {
         alt={source}
         className={className}
         onClick={() => setIsFullView(true)}
+        title={t("common.click_to_enlarge")}
       />
       {isFullView && (
         <div className="full-overlay">
           <img
             src={source}
             alt={`${source}-full-image-view`}
-            className="full-view-image"
+            className="full-view-image border-orange-strong"
             onClick={() => setIsFullView(false)}
+            title={t("common.click_to_close")}
           />
         </div>
       )}

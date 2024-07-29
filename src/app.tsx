@@ -7,7 +7,10 @@ import { RootLayout } from "./components/layout/root-layout";
 import { WorkExperience } from "./components/work/work-experience";
 import "./i18n/config";
 
-//TODO important check package.json and remove unused
+//TODO important after finishing the website:
+//  - upload using netlify use same name as the one: https://saturnomangieri.netlify.app/
+//    - test in mobile & desktop & home TV
+//  - make a new CV based on same website design(content, design) and add download option.
 
 //TODO bellow define enum for routes.
 //TODO error page

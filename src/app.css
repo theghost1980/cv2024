@@ -108,7 +108,7 @@
   align-items: center;
 }
 .full-overlay {
-  background-color: #232629a7;
+  background-color: #232629d1;
   position: absolute;
   left: 0px;
   top: 0px;
@@ -146,6 +146,11 @@
   li {
     margin-bottom: 4px;
   }
+}
+
+/* Global borders */
+.border-orange-strong {
+  border: 2px solid var(--vibrant-orange);
 }
 
 /* Global animations */

@@ -65,6 +65,17 @@ const items = [
     companyName: "Autonomous Freelancer",
     position: "Hybrid",
     time: "2 years",
+    description:
+      "Plan, design and deliver full websites and software applications. Using web development, specifically react I was able to integrate modern frameworks and IT infrastructures to develop and deliver MVPs. Also using software development as Visual basic I was able to create software per client's request.",
+    acomplishments: [
+      "Deal with many clients to deliver websites & software",
+      "Develop modern software systems using Visual Basic",
+      "Implement, lead and follow client's needs",
+    ],
+    images: [
+      "./assets/images/work/freelance/freelance-work-1.jpg",
+      "./assets/images/work/freelance/freelance-work-2.jpg",
+    ],
   },
   {
     id: "04",
@@ -78,6 +89,17 @@ const items = [
     companyLinkURL: "https://www.ena.co.uk/",
     position: "Fully In-place",
     time: "1 year 5 months",
+    description:
+      "Provide assistance, nursery and professional home care to many clients all across United Kingdom. My main challenge was adapting myself to client's needs and care. It was an amazing opportunity to take care of people in need, learn about British Culture and language.",
+    acomplishments: [
+      "Deliver human care and successfully fulfill client's necesities",
+      "Provide professional assistance to at least 5 clients, making their live easier and happier",
+      "Develop close relationships with people with dissabilities while living with them in 3 month periods of time",
+    ],
+    images: [
+      "./assets/images/work/ena/ena-work-1.jpg",
+      "./assets/images/work/ena/ena-work-2.jpg",
+    ],
   },
   {
     id: "05",
@@ -88,12 +110,24 @@ const items = [
     include_flag_in_title: true,
     companyName: "Eccel Corporation",
     companyLinkURL: "http://eccel.co/",
-    position: "Fully Office",
+    position: "Fully In-Office",
     time: "1 year",
+    description:
+      "Maintain, develop and improve a design system of GPRS devices. In this job I had to implement both parts: hardware and software. The interesting aspect fo this job was being able to work among other great Engineers and help to improve the production line in place.",
+    acomplishments: [
+      "Improve procedures to build the equipments/devices",
+      "Successfully design a better way to track equipment and improve billing rates",
+      "Improve the tracking/support tickets systems for their biggest client: CODENSA",
+    ],
+    images: [
+      "./assets/images/work/eccel/eccel-work-1.jpg",
+      "./assets/images/work/eccel/eccel-work-2.jpg",
+      "./assets/images/work/eccel/eccel-work-3.jpg",
+    ],
   },
   {
     id: "06",
-    title: "Frontend Engineer & Software Specialist",
+    title: "IT advisor & Software development",
     bgCard: BgImageFileName.BLOCKVEN_CARD,
     extraCss: "wide",
     logoPNG: (
@@ -112,6 +146,19 @@ const items = [
     companyName: "Blockven C.A",
     position: "Hybrid",
     time: "2 years",
+    description:
+      "Provide IT/PC repairments, professional advice and electronics repair to more than 100 clients in a yearly basis. Here I was able to execute, learn and deepen into my Engineering Degree. It was a great opportunity to work with different clients, provide networking support and improvemnts, among any IT related, including software development.",
+    acomplishments: [
+      "Improve computers networks for over 100 clients",
+      "Provide professional support in IT, networking and electronics",
+      "Develop close relationships and engaing with clients of different niches",
+    ],
+    images: [
+      "./assets/images/work/blockven/blockven-work-1.jpg",
+      "./assets/images/work/blockven/blockven-work-2.webp",
+      "./assets/images/work/blockven/blockven-work-3.jpg",
+      "./assets/images/work/blockven/blockven-work-4.jpg",
+    ],
   },
 ];
 

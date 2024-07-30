@@ -12,6 +12,9 @@ import "./i18n/config";
 //    - test in mobile & desktop & home TV
 //  - make a new CV based on same website design(content, design) and add download option.
 
+/* //TODO remove image from files */
+/* background-image: url("/src/assets/images/bg/bg-img.png"); */
+
 //TODO bellow define enum for routes.
 //TODO error page
 const router = createBrowserRouter([

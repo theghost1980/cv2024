@@ -15,3 +15,31 @@
     }
   }
 }
+
+@media screen and (width >= 992px) {
+  .about-page {
+    /* //TODO remove after finishing */
+    border: 5px solid red;
+    /* end remove */
+  }
+}
+@media screen and (width < 992px) {
+  .about-page {
+    /* //TODO remove after finishing */
+    border: 5px solid blue;
+    /* end remove */
+    .about {
+      margin-top: 20%;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  }
+}
+@media screen and (width < 762px) {
+  .about-page {
+    /* //TODO remove after finishing */
+    border: 5px solid yellow;
+    /* end remove */
+  }
+}

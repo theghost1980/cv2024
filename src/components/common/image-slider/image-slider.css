@@ -1,15 +1,9 @@
 .slider-container {
   width: 100%;
   height: 100%;
-  /* //TODO remove image from files */
-  /* background-image: url("/src/assets/images/bg/bg-img.png"); */
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 20px;
 }
 .slider-images {
   display: flex;
@@ -135,4 +129,48 @@ h1 {
 .slider-img.active .details h2 {
   display: block;
   opacity: 1;
+}
+
+@media screen and (width >= 992px) {
+  .slider-container {
+    /* //TODO remove after finishing */
+    border: 5px solid red;
+    /* end remove */
+    .slider-img {
+      width: 160px;
+      &.active {
+        width: 800px;
+        height: 750px;
+      }
+    }
+  }
+}
+@media screen and (width < 992px) {
+  .slider-container {
+    /* //TODO remove after finishing */
+    border: 5px solid blue;
+    /* end remove */
+    .slider-images {
+      align-items: center;
+    }
+    .slider-img {
+      width: 150px;
+      height: 220px;
+      &.active {
+        left: 5%;
+        top: 5%;
+        position: absolute;
+        width: 90%;
+        height: auto;
+        transform: scale(1);
+      }
+    }
+  }
+}
+@media screen and (width < 762px) {
+  .slider-container {
+    /* //TODO remove after finishing */
+    border: 5px solid yellow;
+    /* end remove */
+  }
 }

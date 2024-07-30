@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Icon, IconPathName } from "../icon/icon";
 import "./image-slider.css";
 
+//TODO add data to tr
+
 const ImageSlider = () => {
   const [active, setActive] = useState(0);
 
@@ -13,11 +15,17 @@ const ImageSlider = () => {
     }
   };
 
+  const getExtraClass = (n: number) => {
+    return active !== n && active !== 0 ? "inactive" : "";
+  };
+
   return (
     <section className="slider-container">
       <div className="slider-images">
         <div
-          className={`slider-img ${active === 1 ? "active" : ""}`}
+          className={`slider-img ${
+            active === 1 ? "active" : ""
+          } ${getExtraClass(1)}`}
           onClick={() => handleClick(1)}
         >
           <img src="./assets/images/carousel/about/1.jpeg" alt="1" />
@@ -36,7 +44,9 @@ const ImageSlider = () => {
           </div>
         </div>
         <div
-          className={`slider-img ${active === 2 ? "active" : ""}`}
+          className={`slider-img ${
+            active === 2 ? "active" : ""
+          } ${getExtraClass(2)}`}
           onClick={() => handleClick(2)}
         >
           <img src="./assets/images/carousel/about/2.jpeg" alt="1" />
@@ -52,7 +62,9 @@ const ImageSlider = () => {
           </div>
         </div>
         <div
-          className={`slider-img ${active === 3 ? "active" : ""}`}
+          className={`slider-img ${
+            active === 3 ? "active" : ""
+          } ${getExtraClass(3)}`}
           onClick={() => handleClick(3)}
         >
           <img src="./assets/images/carousel/about/3.jpeg" alt="1" />
@@ -67,7 +79,9 @@ const ImageSlider = () => {
           </div>
         </div>
         <div
-          className={`slider-img ${active === 4 ? "active" : ""}`}
+          className={`slider-img ${
+            active === 4 ? "active" : ""
+          } ${getExtraClass(4)}`}
           onClick={() => handleClick(4)}
         >
           <img src="./assets/images/carousel/about/4.jpg" alt="1" />

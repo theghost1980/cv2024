@@ -127,6 +127,22 @@ nav {
         }
       }
     }
+
+    @media (width < 992px) {
+      .nav-menu-title {
+        display: none;
+      }
+      .button-my-design {
+        display: none;
+      }
+      .nav-page-title {
+        font-size: 6vw !important;
+      }
+      svg {
+        width: 30px !important;
+        height: 30px !important;
+      }
+    }
   }
 
   .menu_nav_overlay {

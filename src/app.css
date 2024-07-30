@@ -24,6 +24,7 @@
   /* text shadows */
   --shadow-black-half: 4px 4px 4px #00000082;
   --shadow-black-minimum: 1px 1px 1px #00000041;
+  --shadow-offset-ceruleo-light: 19px 18px 3px #1fddff79;
 
   /* box shadows */
   --box-shadow-light: rgba(0, 0, 0, 0.462) 1.95px 1.95px 8px 3px;

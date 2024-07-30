@@ -1,3 +1,4 @@
+import { t } from "i18next";
 import React from "react";
 import "./span-link.css";
 
@@ -13,7 +14,7 @@ const SpanLink = ({ titleLink, link }: Props) => {
       className="text-link"
       onClick={() => window.open(link, "")}
     >
-      {titleLink}
+      {t(titleLink)}
     </span>
   );
 };

@@ -16,7 +16,7 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
     return i.companyLinkURL ? (
       <SpanLink titleLink={i.companyName} link={i.companyLinkURL} />
     ) : (
-      i.companyName
+      t(i.companyName)
     );
   };
 
@@ -52,7 +52,7 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
                     additionalClassName="margin-right-min"
                   />
                 )}
-                {i.title}
+                {t(i.title)}
               </div>
             </div>
             {i.flagIcon && !i.include_flag_in_title && (
@@ -82,7 +82,7 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
             <div className="content-details">
               <div className="content-text">
                 <div className="header-title-small bold-text text-shadow-light">
-                  {i.title}
+                  {t(i.title)}
                 </div>
                 <div className="sub-header-title-italic content-subheader">
                   {t("common.at")} {renderCompanyLink(i)}
@@ -96,7 +96,7 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
                       color="black"
                     />
                     <div className="sub-header-title-italic label">
-                      {i.position}
+                      {t(i.position)}
                     </div>
                   </div>
                   <div className="icon-text">
@@ -107,13 +107,13 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
                       color="black"
                     />
                     <div className="sub-header-title-italic label">
-                      {i.time}
+                      {t(i.time)}
                     </div>
                   </div>
                 </div>
               </div>
               <div className="content-text orange">
-                <div className="text-decription">{i.description}</div>
+                <div className="text-decription">{t(i.description)}</div>
               </div>
               <div className="content-text ceruleo-medium last">
                 {i.acomplishments && (
@@ -134,7 +134,7 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
                                 additionalClassName="icon-class-default"
                               />
                               <div className="content-short margin-left-min">
-                                {a}
+                                {t(a)}
                               </div>
                             </div>
                           </li>

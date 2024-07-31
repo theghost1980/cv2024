@@ -121,6 +121,13 @@
   justify-content: center;
   align-items: center;
 }
+.div-row-spaced {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
 .div-row-aligned {
   display: flex;
   flex-direction: row;

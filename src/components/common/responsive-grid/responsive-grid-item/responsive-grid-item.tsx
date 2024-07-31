@@ -69,21 +69,23 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
       </div>
       {isOpen && (
         <div className="opened-overlay">
-          <div className="close-icon">
-            <Icon
-              iconPathName={IconPathName.CLOSE}
-              width={30}
-              height={30}
-              color="white"
-              onClick={() => setIsOpen(false)}
-            />
-          </div>
           <div className="card-overlay-content">
             <div className="content-details">
               <div className="content-text">
-                <h2 className="header-title-small bold-text text-shadow-light">
-                  {t(i.title)}
-                </h2>
+                <div className="div-row-spaced">
+                  <h2 className="header-title-small bold-text text-shadow-light">
+                    {t(i.title)}
+                  </h2>
+                  <div className="close-icon">
+                    <Icon
+                      iconPathName={IconPathName.CLOSE}
+                      width={30}
+                      height={30}
+                      color="black"
+                      onClick={() => setIsOpen(false)}
+                    />
+                  </div>
+                </div>
                 <h3 className="sub-header-title-italic content-subheader">
                   {t("common.at")} {renderCompanyLink(i)}
                 </h3>

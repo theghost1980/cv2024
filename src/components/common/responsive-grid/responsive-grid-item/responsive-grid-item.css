@@ -72,7 +72,6 @@
   align-items: center;
 
   .close-icon {
-    position: absolute;
     right: 20px;
     top: 20px;
   }
@@ -164,9 +163,15 @@
 @media (width >= 1300px) {
   .content-text {
     overflow: scroll;
-  }
-  .content-text > h2 {
-    font-size: 2vw !important;
+    .div-row-spaced > h2 {
+      font-size: 2vw !important;
+    }
+    .close-icon {
+      svg {
+        width: 40px !important;
+        height: 40px !important;
+      }
+    }
   }
   .content-text > h3 {
     font-size: 1.8vw !important;

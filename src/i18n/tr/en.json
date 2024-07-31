@@ -29,7 +29,10 @@
     "what_was_acommplished": "What was acomplished?",
     "at": "at",
     "click_to_enlarge": "Click for full view!",
-    "click_to_close": "Click to close!"
+    "click_to_close": "Click to close!",
+    "in": "In",
+    "time": "time",
+    "my_name": "Saturno"
   },
   "data": {
     "work_experience": {
@@ -92,6 +95,28 @@
         "acomplishment_1": "Improve computers networks for over 100 clients",
         "acomplishment_2": "Provide professional support in IT, networking and electronics",
         "acomplishment_3": "Develop close relationships and engage with clients of different niches"
+      }
+    },
+    "about": {
+      "nature": {
+        "title": "Nature",
+        "p_1": "I really enjoy having a nice trip into the nature, here I charge my batteries.",
+        "p_2": "I am an experienced web developer. I am 43 years old, Venezuelan and Italian. I consider myself a reliable, spiritual and dedicated person to the things I love."
+      },
+      "love": {
+        "title": "Love",
+        "p_1": "My wife is one of the most important treasures I have.",
+        "p_2": "I love to help and to serve. That's why making websites, correcting code, creating functions and implementing new features, are things that I definitely love."
+      },
+      "family": {
+        "title": "Family",
+        "p_1": "I believe family is the pilar of our lifes.",
+        "p_2": "More than just a professional Engineer I am a person who try to find the extraordinary in the day to day life."
+      },
+      "me": {
+        "title": "Me",
+        "p_1": "I have come from another galaxy, to work with you. it will be a real pleasure to help you make real your ideas.",
+        "p_2": "A 'normal guy' trying to always make the difference!"
       }
     }
   }

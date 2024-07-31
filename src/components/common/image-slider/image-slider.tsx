@@ -1,8 +1,7 @@
+import { t } from "i18next";
 import React, { useState } from "react";
 import { Icon, IconPathName } from "../icon/icon";
 import "./image-slider.css";
-
-//TODO add data to tr
 
 const ImageSlider = () => {
   const [active, setActive] = useState(0);
@@ -29,18 +28,11 @@ const ImageSlider = () => {
           onClick={() => handleClick(1)}
         >
           <img src="./assets/images/carousel/about/1.jpeg" alt="1" />
-          <h1>Nature</h1>
+          <h1>{t("data.about.nature.title")}</h1>
           <div className="details">
-            <h2>Nature</h2>
-            <p>
-              I really enjoy having a nice trip into the nature, here I charge
-              my batteries.
-            </p>
-            <p>
-              I am an experienced web developer. I am 43 years old, Venezuelan
-              and Italian. I consider myself a reliable, spiritual and dedicated
-              person to the things I love.
-            </p>
+            <h2>{t("data.about.nature.title")}</h2>
+            <p>{t("data.about.nature.p_1")}</p>
+            <p>{t("data.about.nature.p_2")}</p>
           </div>
         </div>
         <div
@@ -50,15 +42,13 @@ const ImageSlider = () => {
           onClick={() => handleClick(2)}
         >
           <img src="./assets/images/carousel/about/2.jpeg" alt="1" />
-          <h1>Love</h1>
+          <h1>{t("data.about.love.title")}</h1>
           <div className="details">
-            <h2>In Love</h2>
-            <p>My wife is one of the most important treasures I have.</p>
-            <p>
-              I love to help and to serve. That's why making websites,
-              correcting code, creating functions and implementing new features,
-              are things that I definitely love.
-            </p>
+            <h2>
+              {t("common.in")} {t("data.about.love.title")}
+            </h2>
+            <p>{t("data.about.love.p_1")}</p>
+            <p>{t("data.about.love.p_2")}</p>
           </div>
         </div>
         <div
@@ -68,14 +58,13 @@ const ImageSlider = () => {
           onClick={() => handleClick(3)}
         >
           <img src="./assets/images/carousel/about/3.jpeg" alt="1" />
-          <h1>Family</h1>
+          <h1>{t("data.about.family.title")}</h1>
           <div className="details">
-            <h2>Family time</h2>
-            <p>I believe family is the pilar of our lifes.</p>
-            <p>
-              More than just a professional Engineer I am a person who try to
-              find the extraordinary in the day to day life.
-            </p>
+            <h2>
+              {t("data.about.family.title")} {t("common.time")}
+            </h2>
+            <p>{t("data.about.family.p_1")}</p>
+            <p>{t("data.about.family.p_2")}</p>
           </div>
         </div>
         <div
@@ -85,14 +74,11 @@ const ImageSlider = () => {
           onClick={() => handleClick(4)}
         >
           <img src="./assets/images/carousel/about/4.jpg" alt="1" />
-          <h1>Me</h1>
+          <h1>{t("data.about.me.title")}</h1>
           <div className="details">
-            <h2>Saturno</h2>
-            <p>
-              I have come from another galaxy, to work with you. it will be a
-              real pleasure to help you make real your ideas.
-            </p>
-            <p>A normal guy trying to always make the difference!</p>
+            <h2>{t("common.my_name")}</h2>
+            <p>{t("data.about.me.p_1")}</p>
+            <p>{t("data.about.me.p_2")}</p>
             <Icon
               iconPathName={IconPathName.SATURN}
               width={80}

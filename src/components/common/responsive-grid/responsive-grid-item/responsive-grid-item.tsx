@@ -81,12 +81,12 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
           <div className="card-overlay-content">
             <div className="content-details">
               <div className="content-text">
-                <div className="header-title-small bold-text text-shadow-light">
+                <h2 className="header-title-small bold-text text-shadow-light">
                   {t(i.title)}
-                </div>
-                <div className="sub-header-title-italic content-subheader">
+                </h2>
+                <h3 className="sub-header-title-italic content-subheader">
                   {t("common.at")} {renderCompanyLink(i)}
-                </div>
+                </h3>
                 <div className="position-duration-container">
                   <div className="icon-text">
                     <Icon
@@ -95,9 +95,9 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
                       height={35}
                       color="black"
                     />
-                    <div className="sub-header-title-italic label">
+                    <p className="sub-header-title-italic label">
                       {t(i.position)}
-                    </div>
+                    </p>
                   </div>
                   <div className="icon-text">
                     <Icon
@@ -106,21 +106,19 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
                       height={35}
                       color="black"
                     />
-                    <div className="sub-header-title-italic label">
-                      {t(i.time)}
-                    </div>
+                    <p className="sub-header-title-italic label">{t(i.time)}</p>
                   </div>
                 </div>
               </div>
               <div className="content-text orange">
-                <div className="text-decription">{t(i.description)}</div>
+                <p className="text-decription">{t(i.description)}</p>
               </div>
-              <div className="content-text ceruleo-medium last">
+              <div className="content-text last ceruleo-medium">
                 {i.acomplishments && (
                   <div>
-                    <div className="title-italic margin-bottom-max">
+                    <p className="title-italic margin-bottom-max">
                       {t("common.what_was_acommplished")}
-                    </div>
+                    </p>
                     <ul className="ul-default-list">
                       {i.acomplishments.map((a: string, index: number) => {
                         return (
@@ -133,9 +131,9 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
                                 height={24}
                                 additionalClassName="icon-class-default"
                               />
-                              <div className="content-short margin-left-min">
+                              <p className="content-short margin-left-max">
                                 {t(a)}
-                              </div>
+                              </p>
                             </div>
                           </li>
                         );

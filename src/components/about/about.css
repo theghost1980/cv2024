@@ -16,28 +16,14 @@
   }
 }
 
-@media screen and (width >= 992px) {
-  .about-page {
-    /* //TODO remove after finishing */
-    /* border: 5px solid red; */
-    /* end remove */
-  }
-}
+/* @media screen and (width >= 992px) {} */
+
 @media screen and (width < 992px) {
   .about-page {
-    /* //TODO remove after finishing */
-    /* border: 5px solid blue; */
-    /* end remove */
     .about {
       align-items: center;
       width: 100%;
     }
   }
 }
-@media screen and (width < 762px) {
-  .about-page {
-    /* //TODO remove after finishing */
-    /* border: 5px solid yellow; */
-    /* end remove */
-  }
-}
+/* @media screen and (width < 762px) {} */

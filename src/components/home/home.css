@@ -1,6 +1,7 @@
 .hero-saturno {
   background-position: bottom 0px right -90px;
   animation: grayColorToUnset 7s;
+  background-repeat: no-repeat;
 }
 .hero-section {
   position: relative;
@@ -50,6 +51,11 @@
   }
 }
 
+@media screen and (width >= 1300px) {
+  .hero-saturno {
+    background-position: bottom -100px right -90px;
+  }
+}
 @media screen and (width >= 992px) {
   .hero-section {
     flex-direction: column;

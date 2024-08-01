@@ -12,7 +12,7 @@ const SpanLink = ({ titleLink, link }: Props) => {
     <span
       title={`visit ${link}`}
       className="text-link"
-      onClick={() => window.open(link, "")}
+      onClick={() => window.open(link)}
     >
       {t(titleLink)}
     </span>

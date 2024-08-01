@@ -105,28 +105,41 @@ const ResponsiveGridItem = ({
                 <h3 className="sub-header-title-italic content-subheader">
                   {t("common.at")} {renderCompanyLink(i)}
                 </h3>
-                <div className="position-duration-container">
-                  <div className="icon-text">
-                    <Icon
-                      iconPathName={IconPathName.POSITION_INDICATOR}
-                      width={35}
-                      height={35}
-                      color="black"
-                    />
-                    <p className="sub-header-title-italic label">
-                      {t(i.position)}
-                    </p>
+                {!removeGradientOverlay && (
+                  <div className="position-duration-container">
+                    <div className="icon-text">
+                      <Icon
+                        iconPathName={IconPathName.POSITION_INDICATOR}
+                        width={35}
+                        height={35}
+                        color="black"
+                      />
+                      <p className="sub-header-title-italic label">
+                        {t(i.position)}
+                      </p>
+                    </div>
+                    <div className="icon-text">
+                      <Icon
+                        iconPathName={IconPathName.TIME}
+                        width={35}
+                        height={35}
+                        color="black"
+                      />
+                      <p className="sub-header-title-italic label">
+                        {t(i.time)}
+                      </p>
+                    </div>
                   </div>
-                  <div className="icon-text">
-                    <Icon
-                      iconPathName={IconPathName.TIME}
-                      width={35}
-                      height={35}
-                      color="black"
-                    />
-                    <p className="sub-header-title-italic label">{t(i.time)}</p>
-                  </div>
-                </div>
+                )}
+                {removeGradientOverlay && i.projectLinkCode && (
+                  <Icon
+                    iconPathName={IconPathName.GITHUB}
+                    width={30}
+                    height={30}
+                    color="var(--darker-tone)"
+                    onClick={() => window.open(i.projectLinkCode)}
+                  />
+                )}
               </div>
               <div className="content-text orange">
                 <p className="text-decription">{t(i.description)}</p>

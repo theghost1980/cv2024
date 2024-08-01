@@ -15,6 +15,7 @@ export enum IconPathName {
   POSITION_INDICATOR = "common/position-indicator",
   TIME = "common/time",
   CHECK = "common/check",
+  GITHUB = "common/github",
 }
 
 export enum LogoPathName {

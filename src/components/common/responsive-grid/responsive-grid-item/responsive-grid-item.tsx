@@ -8,9 +8,15 @@ import "./responsive-grid-item.css";
 
 interface Props {
   item: any;
+  removeGradientOverlay?: string;
+  minAlpha?: boolean;
 }
 
-const ResponsiveGridItem = ({ item: i }: Props) => {
+const ResponsiveGridItem = ({
+  item: i,
+  removeGradientOverlay,
+  minAlpha,
+}: Props) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const renderCompanyLink = (i: any) => {
@@ -28,10 +34,15 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
         onClick={() => setIsOpen(!isOpen)}
       >
         <BgOverlay
-          overlayColor={{ red: 0, blue: 0, green: 0, alpha: 0.3 }}
+          overlayColor={{
+            red: 0,
+            blue: 0,
+            green: 0,
+            alpha: minAlpha ? 0.1 : 0.2,
+          }}
           additionalClassname="top-overlay"
         />
-        <div className="grid-overlay">
+        <div className={`grid-overlay ${removeGradientOverlay}`}>
           <div className="content-container">
             <div className="logo-title-container">
               {i.logoPath && (

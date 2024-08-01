@@ -4,9 +4,11 @@ import "./responsive-grid.css";
 
 interface Props {
   items: any[];
+  removeGradientOverlay?: string;
+  minAlpha?: boolean;
 }
 
-const ResponsiveGrid = ({ items }: Props) => {
+const ResponsiveGrid = ({ items, removeGradientOverlay, minAlpha }: Props) => {
   return (
     <div className="responsive-grid">
       <div className="grid-wrapper">
@@ -14,6 +16,8 @@ const ResponsiveGrid = ({ items }: Props) => {
           <ResponsiveGridItem
             item={i}
             key={`${i.id}-${index}-grid-card-item`}
+            removeGradientOverlay={removeGradientOverlay}
+            minAlpha={minAlpha}
           />
         ))}
       </div>

@@ -4,6 +4,7 @@ import "./app.css";
 import { About } from "./components/about/about";
 import { Home } from "./components/home/home";
 import { RootLayout } from "./components/layout/root-layout";
+import Projects from "./components/projects/projects";
 import { WorkExperience } from "./components/work/work-experience";
 import "./i18n/config";
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/work-experience",
         element: <WorkExperience />,
+      },
+      {
+        path: "/projects",
+        element: <Projects />,
       },
     ],
   },

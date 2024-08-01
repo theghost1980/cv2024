@@ -18,6 +18,9 @@
     height: 100%;
     background: linear-gradient(var(--lighter-tone), #fffefe49);
     border-radius: inherit;
+    &.no-overlay-gradient {
+      background: none !important;
+    }
   }
   &:hover {
     cursor: pointer;

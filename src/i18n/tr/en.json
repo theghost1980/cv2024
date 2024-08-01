@@ -20,7 +20,8 @@
     "menu": "Menu",
     "page_title": {
       "about_me": "Nice to meet you",
-      "work_experience": "Work experience"
+      "work_experience": "Work experience",
+      "projects": "Projects"
     }
   },
   "common": {
@@ -95,6 +96,128 @@
         "acomplishment_1": "Improve computers networks for over 100 clients",
         "acomplishment_2": "Provide professional support in IT, networking and electronics",
         "acomplishment_3": "Develop close relationships and engage with clients of different niches"
+      }
+    },
+    "project": {
+      "rocco_website": {
+        "title": "Cathedratic Website",
+        "company_name": "Autonomous Freelancer",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "old_portfolio_website": {
+        "title": "Old Portolfio Website",
+        "company_name": "Autonomous Freelancer",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "jobaboard_website": {
+        "title": "Web3 Platform 'Jobaboard'",
+        "company_name": "Autonomous Freelancer",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "nansystems_website": {
+        "title": "Biography/CV/Service Website",
+        "company_name": "Autonomous Freelancer",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "landing_website": {
+        "title": "Landing Website sample",
+        "company_name": "Autonomous Freelancer",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "keychain_ci": {
+        "title": "Testing CI/CD",
+        "company_name": "Keychain L.T.D",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "keychain_store": {
+        "title": "Keychain Store",
+        "company_name": "Keychain L.T.D",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "keychain_playground_website": {
+        "title": "Keychain Playground",
+        "company_name": "Keychain L.T.D",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "keychain_widget_website": {
+        "title": "Keychain Widget",
+        "company_name": "Keychain L.T.D",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "keychain_sdk": {
+        "title": "Keychain SDK",
+        "company_name": "Keychain L.T.D",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "keychain_tutorial_website": {
+        "title": "Keychain Tutorial",
+        "company_name": "Keychain L.T.D",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "keychain_mobile_widgets": {
+        "title": "Keychain Mobile Widgets",
+        "company_name": "Keychain L.T.D",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "keychain_mobile_newui": {
+        "title": "Keychain Mobile New UI/UX",
+        "company_name": "Keychain L.T.D",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "keychain_extension_portfolio": {
+        "title": "Keychain Chrome Extension Portfolio",
+        "company_name": "Keychain L.T.D",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
+      },
+      "first_cv_portfolio": {
+        "title": "First Portfolio/CV",
+        "company_name": "Upgrading Knowledge 2019",
+        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
+        "key_point_1": "key point one",
+        "key_point_2": "key point two",
+        "key_point_3": "key point 3"
       }
     },
     "about": {

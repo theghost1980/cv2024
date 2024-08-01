@@ -38,7 +38,8 @@ export const Navbar = ({ classname = "floating" }: Props) => {
 
   useEffect(() => {
     console.log(location);
-    //TODo bellow add a reference data folder + file to bring selected route page data
+    //TODO bellow add a reference data folder + file to bring selected route page data
+    // TODO and fix these logic, refactor
     if (location && location.pathname.includes("about")) {
       setClassByRoute("desktop-view");
       setDesktopMenuProps({
@@ -63,6 +64,23 @@ export const Navbar = ({ classname = "floating" }: Props) => {
         linkOne: {
           title: "common.projects",
           to: "/projects",
+        },
+        linkTwo: {
+          title: "button.about_me",
+          to: "/about",
+        },
+        ctaButton: {
+          title: "contact_me",
+          to: "/get-in-touch",
+        },
+      });
+    } else if (location && location.pathname.includes("projects")) {
+      setClassByRoute("desktop-view");
+      setDesktopMenuProps({
+        pageTitle: "navigation.page_title.projects",
+        linkOne: {
+          title: "common.work",
+          to: "/work-experience",
         },
         linkTwo: {
           title: "button.about_me",

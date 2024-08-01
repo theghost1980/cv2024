@@ -2,6 +2,7 @@ import { t } from "i18next";
 import React, { useState } from "react";
 import ImageExpandable from "../../../image-expandable/image-expandable";
 import { Icon, IconPathName } from "../../icon/icon";
+import BgOverlay from "../../overlay/bg-overlay";
 import SpanLink from "../../span-link/span-link";
 import "./responsive-grid-item.css";
 
@@ -26,6 +27,10 @@ const ResponsiveGridItem = ({ item: i }: Props) => {
         className={`grid-card ${i.extraCss ? i.extraCss : ""}`}
         onClick={() => setIsOpen(!isOpen)}
       >
+        <BgOverlay
+          overlayColor={{ red: 0, blue: 0, green: 0, alpha: 0.3 }}
+          additionalClassname="top-overlay"
+        />
         <div className="grid-overlay">
           <div className="content-container">
             <div className="logo-title-container">

@@ -1,4 +1,5 @@
 import React from "react";
+import BgOverlay from "../overlay/bg-overlay";
 import "./background-image.css";
 
 //TODO create enum file, move
@@ -32,25 +33,6 @@ export const BackgroundImage = ({
   additionalClassname,
   overlayColor,
 }: Props) => {
-  const renderOverlay = () => {
-    const { red, green, blue, alpha } = overlayColor;
-    return (
-      <div
-        id="bg_overlay"
-        style={{
-          display: "block",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          backgroundColor: `rgba(${red},${green},${blue},${alpha})`,
-          zIndex: 1,
-        }}
-      />
-    );
-  };
-
   return (
     <div
       className={`bg-image-container ${additionalClassname}`}
@@ -58,7 +40,7 @@ export const BackgroundImage = ({
         backgroundImage: `url(./assets/images/bg/${bgImageFileName})`,
       }}
     >
-      {overlayColor && renderOverlay()}
+      {overlayColor && <BgOverlay overlayColor={overlayColor} />}
     </div>
   );
 };

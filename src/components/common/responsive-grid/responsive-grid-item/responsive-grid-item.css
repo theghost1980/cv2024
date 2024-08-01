@@ -36,6 +36,9 @@
       border-radius: 6px;
       box-shadow: var(--box-shadow-min-lower);
     }
+    & > .top-overlay {
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
   }
 
   .content-container {

@@ -82,6 +82,10 @@
   font-weight: 500;
 }
 
+.shadow-text-min {
+  text-shadow: 1px 1px 7px #000000b0;
+}
+
 .title-italic {
   font-family: var(--secondary-header);
   font-size: 20px;
@@ -93,7 +97,7 @@
 .content-short {
   font-family: var(--content-small);
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--lighter-tone);
 }
 

@@ -113,6 +113,7 @@ const ResponsiveGridItem = ({
                         width={35}
                         height={35}
                         color="black"
+                        additionalClassName="icon-svg"
                       />
                       <p className="sub-header-title-italic label">
                         {t(i.position)}
@@ -124,6 +125,7 @@ const ResponsiveGridItem = ({
                         width={35}
                         height={35}
                         color="black"
+                        additionalClassName="icon-svg"
                       />
                       <p className="sub-header-title-italic label">
                         {t(i.time)}
@@ -138,16 +140,19 @@ const ResponsiveGridItem = ({
                     height={30}
                     color="var(--darker-tone)"
                     onClick={() => window.open(i.projectLinkCode)}
+                    additionalClassName="icon-svg"
                   />
                 )}
               </div>
               <div className="content-text orange">
-                <p className="text-decription">{t(i.description)}</p>
+                <p className="text-decription shadow-text-min">
+                  {t(i.description)}
+                </p>
               </div>
               <div className="content-text last ceruleo-medium">
                 {i.acomplishments && (
                   <div>
-                    <p className="title-italic margin-bottom-max">
+                    <p className="title-italic shadow-text-min margin-bottom-max">
                       {t("common.what_was_acommplished")}
                     </p>
                     <ul className="ul-default-list">
@@ -157,12 +162,12 @@ const ResponsiveGridItem = ({
                             <div className="div-row-aligned">
                               <Icon
                                 iconPathName={IconPathName.CHECK}
-                                color="var(--vibrant-orange-darker)"
-                                width={24}
-                                height={24}
-                                additionalClassName="icon-class-default"
+                                color="var(--darker-tone)"
+                                width={28}
+                                height={28}
+                                additionalClassName="icon-class-default svg-check"
                               />
-                              <p className="content-short margin-left-max">
+                              <p className="content-short shadow-text-min margin-left-max">
                                 {t(a)}
                               </p>
                             </div>
@@ -175,15 +180,19 @@ const ResponsiveGridItem = ({
                 {i.tech_stack && (
                   <div className="div-col-centered">
                     <div className="div-row-centered margin-bottom-max">
-                      <p className="text-decription">{t("common.tech")}</p>
+                      <p className="text-decription shadow-text-min">
+                        {t("common.tech")}
+                      </p>
                       <Icon
                         iconPathName={IconPathName.STACK}
                         width={35}
                         height={45}
                         color="white"
-                        additionalClassName="margin-left-min margin-right-min"
+                        additionalClassName="icon-stack margin-left-min margin-right-min"
                       />
-                      <p className="text-decription">{t("common.stack")}</p>
+                      <p className="text-decription shadow-text-min">
+                        {t("common.stack")}
+                      </p>
                     </div>
                     <ul className="ul-list-row">
                       {i.tech_stack.map((t: IconPathName, index: number) => {

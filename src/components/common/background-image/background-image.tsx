@@ -6,9 +6,11 @@ import "./background-image.css";
 export enum BgImageFileName {
   HERO = "hero.jpg",
   HERO_SATURNO = "hero_saturno.png",
+  GET_IN_TOUCH_SATURNO = "get-in-touch-saturno.png",
   HOME_OFFICE = "home_office.jpg",
   ABOUT_ME = "about_venezuela.jpg",
   WORK = "work_experience.jpg",
+  CONTACT = "get-in-touch.png",
   KEYCHAIN_CARD = "/cards/keychain-card.png",
   HIVE_KEYCHAIN_CARD = "/cards/hive-keychain-card.png",
   ECCEL_CARD = "/cards/eccel-card.png",

@@ -19,7 +19,7 @@ export const Home = () => {
       />
       <BackgroundImage
         bgImageFileName={BgImageFileName.HERO_SATURNO}
-        additionalClassname="hero-saturno addAnimationColor"
+        additionalClassname="hero-saturno"
       />
       <div className="hero-section">
         <div className="title-container">

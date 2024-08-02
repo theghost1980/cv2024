@@ -46,6 +46,9 @@ export enum IconPathName {
   JAVA = "common/java",
   FIGMA = "common/figma",
   CHROME = "common/chrome",
+  FACEBOOK = "common/facebook",
+  LINKEDIN = "common/linkedin",
+  DOWNLOAD = "common/download",
 }
 
 export enum LogoPathName {

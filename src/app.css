@@ -16,6 +16,7 @@
   --text-lighter: #e9e9e9;
   --gray-medium: #ebedeb;
   --grayish-bg: #ededf0;
+  --glassy-gray-bg: #b1b2b56f;
 
   /* borders */
   --border-ligther: 1px solid var(--lighter-tone);

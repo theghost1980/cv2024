@@ -91,6 +91,24 @@ export const Navbar = ({ classname = "floating" }: Props) => {
           to: "/get-in-touch",
         },
       });
+    } else if (location && location.pathname.includes("get-in-touch")) {
+      setClassByRoute("desktop-view");
+      setDesktopMenuProps({
+        pageTitle: "navigation.page_title.get_in_touch",
+        linkOne: {
+          title: "common.work",
+          to: "/work-experience",
+        },
+        linkTwo: {
+          title: "common.projects",
+          to: "/projects",
+        },
+        ctaButton: {
+          title: "download_cv",
+          //TODO add action option to directly download file
+          to: "/get-in-touch",
+        },
+      });
     }
   }, [location]);
 

@@ -34,7 +34,7 @@ export const PROJECTS_DATA_CARD_LIST = [
     companyName: "data.project.old_portfolio_website.company_name",
     companyLinkURL: "https://frosty-poincare-a18064.netlify.app/",
     projectLinkCode: "https://github.com/theghost1980/newportfolio",
-    description: "data.project.rocco_website.description",
+    description: "data.project.old_portfolio_website.description",
     tech_stack: [
       IconPathName.REACT,
       IconPathName.JAVASCRIPT,
@@ -135,7 +135,7 @@ export const PROJECTS_DATA_CARD_LIST = [
       "https://github.com/hive-keychain/hive-keychain-extension/tree/tests/fix-tests-17022023/src/__tests__",
     projectLinkCode:
       "https://github.com/hive-keychain/hive-keychain-extension/blob/tests/fix-tests-17022023/src/__tests__/content-scripts/web-interface/response.logic.test.ts",
-    description: "data.project.landing_website.description",
+    description: "data.project.keychain_ci.description",
     tech_stack: [
       IconPathName.REACT,
       IconPathName.TYPESCRIPT,

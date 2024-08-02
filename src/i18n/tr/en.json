@@ -104,122 +104,77 @@
       "rocco_website": {
         "title": "Professional/Artistic Website",
         "company_name": "Autonomous Freelancer",
-        "description": "The person wanted me to create a website to show both aspects: artistic and learning achievements. All of this using the SPA mode(sin page application). I decided using react to build this site according to client's needs and preferences.",
-        "key_point_1": "Making a modern site as SPA",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "The person wanted me to create a website to show both aspects: artistic and learning achievements. All of this using the SPA mode(sin page application). I decided using react to build this site according to client's needs and preferences."
       },
       "old_portfolio_website": {
         "title": "Portfolio Website",
         "company_name": "Autonomous Freelancer",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "For this website I decided to make a mix between both themes: development & music. Responsiveness also was a key and a mobile first approach. One important aspect to mention was adding an option to buy music CD albums for the page, which I did using paypal API."
       },
       "jobaboard_website": {
         "title": "Web3 Platform 'Jobaboard'",
         "company_name": "Autonomous Freelancer",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "This idea came when I was just finishing my first knowledge updgrade to React and JS. It was a US contractor who hired me for this. The project was challenging because I had to code the backend and front, also web3 & blockchain were involved. The platform idea was 'having a platform like freelancer but using NFTs instead of FIAT'. I had to work around 12 - 14 hrs for around 5 months to build this site from the ground up."
       },
       "nansystems_website": {
         "title": "Biography/CV/Service Website",
         "company_name": "Autonomous Freelancer",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "This USA based client, wanted a website to show her professional profile but also quote business enquires. The client also wanted the choice to edit the majority of the content and being able to have a blog. I've ended up using graphql and headless CMS because their flexibilities to achieve this."
       },
       "landing_website": {
         "title": "Landing Website sample",
         "company_name": "Autonomous Freelancer",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "Based as a SPA working as a landing page. The main focus was responsiness and an attractive design. I built this using react and graphic design principles to show a nice balance between functionality and energy."
       },
       "keychain_ci": {
         "title": "Testing CI/CD",
         "company_name": "Keychain L.T.D",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "This was my first task when working with these company. They had a huge code base: a chrome extension that works as a web3 wallet. Just after learning about the basics of JEST, RTL and Typescript, I coded an entire CI/CD, E2E tests, module tests and finally I proudly got a 97% Coverage. Also I must confess it was a great opportunity to work with testing and deepen into handling a complex code base."
       },
       "keychain_store": {
         "title": "Keychain Store",
         "company_name": "Keychain L.T.D",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "This web3 network, called HIVE, have many users and frecuently they transfer currencies. Many of them use this as their payment systems to sell/buy products online. The users wanted a way to generate in a mobile app, a unique transaction request to handle their payments. I did this using react native and web3."
       },
       "keychain_playground_website": {
         "title": "Keychain Playground",
         "company_name": "Keychain L.T.D",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "After working in the Keychain SDK, the idea was having a website to play/test with all the commands and options of the SDK. Using React, TS, web3 and bootstrap, I was able to code this site. So the users can see the commands, read live samples and analyse the code before executing an operation."
       },
       "keychain_widget_website": {
         "title": "Keychain Widget",
         "company_name": "Keychain L.T.D",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "This company stablished a way to trade tokens. They called this a swap feature. The main idea of having a widget was to allow users to embed this feature in any website of web app. Using tools like: React, webpack, TS, etc., I was able to code a 'smart Iframe' which works as a 'mini copy of their chrome extension' and enable swapping tokens in every webapp they need."
       },
       "keychain_sdk": {
         "title": "Keychain SDK",
         "company_name": "Keychain L.T.D",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "SDK stands for Software Development Kit. It is a code base that allow developers to save time and work by having an online library to help them execute/debug commands or even request data or information. I did this using pure Typescript among other tools, and taking advantange of the chrome extension they did."
       },
       "keychain_tutorial_website": {
         "title": "Keychain Tutorial",
         "company_name": "Keychain L.T.D",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "Using react, TS, JS and i18n translation tools, I was able to create this tutorial website to teach new users about the features that offers this web3 company. It is worth mentioning that the site has automatic language detection and device detection just for rendering and performance pourposes."
       },
       "keychain_mobile_widgets": {
         "title": "Keychain Mobile Widgets",
         "company_name": "Keychain L.T.D",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "This was challenging as it was a feature not even the team did before. The idea was having widgets for Android. I did this by digging into JAVA. As you may know react native allows you to use custom modules to communicate with the native code. This task also allowed me to learn and practice about finding ways to create graphics 'by hand' and handle data updates between JAVA side and React native side. I've ended up creating 2 widgets for this mobile app."
       },
       "keychain_mobile_newui": {
         "title": "Keychain Mobile New UI/UX",
         "company_name": "Keychain L.T.D",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "This company decided to upgrade their entire mobile app design. In order to achieve this we had to deepen into Figma and make many changes to the UI/UX of the app. Also it is worth mentioning that I had to stablish more than 3 emulators and use real android devices to ensure the proper visuals no matter what device was using the app."
       },
       "keychain_extension_portfolio": {
         "title": "Keychain Chrome Extension Portfolio",
         "company_name": "Keychain L.T.D",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "This network, as many other web3, have their own tokens. Those tokens can be staked, traded and delegated. This company wanted me to code a portfolio that could summarize the tokens & currencies for each account found in the chrome extension wallet."
       },
       "first_cv_portfolio": {
         "title": "First Portfolio/CV",
         "company_name": "Upgrading Knowledge 2019",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
-        "key_point_2": "key point two",
-        "key_point_3": "key point 3"
+        "description": "As a part of my upgrading knowledge process, I had to document each step done when doing two important courses: Odin Project & Freecodecamp. This way I was able to code and practice with real life projects during my upgrade many years ago."
       }
     },
     "about": {

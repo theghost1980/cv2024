@@ -33,7 +33,9 @@
     "click_to_close": "Click to close!",
     "in": "In",
     "time": "time",
-    "my_name": "Saturno"
+    "my_name": "Saturno",
+    "tech": "Tech",
+    "stack": "Stack"
   },
   "data": {
     "work_experience": {
@@ -102,8 +104,8 @@
       "rocco_website": {
         "title": "Professional/Artistic Website",
         "company_name": "Autonomous Freelancer",
-        "description": "Nam dolor mauris, pulvinar nec fringilla et, pulvinar id ex. Nunc faucibus vulputate augue, ac viverra leo pellentesque quis. Aliquam erat volutpat. Praesent tellus massa, hendrerit eu dui in, gravida efficitur nulla. Donec fermentum non odio eget blandit. Cras non est at mauris ullamcorper auctor. Donec vel viverra nibh.",
-        "key_point_1": "key point one",
+        "description": "The person wanted me to create a website to show both aspects: artistic and learning achievements. All of this using the SPA mode(sin page application). I decided using react to build this site according to client's needs and preferences.",
+        "key_point_1": "Making a modern site as SPA",
         "key_point_2": "key point two",
         "key_point_3": "key point 3"
       },

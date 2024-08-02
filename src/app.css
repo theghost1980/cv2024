@@ -145,6 +145,13 @@
   justify-content: center;
   align-items: center;
 }
+.div-col-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 
 /* Global spacing */
 .margin-left-min {
@@ -175,6 +182,14 @@
   li {
     margin-bottom: 4px;
   }
+}
+.ul-list-row {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  column-gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Global borders */

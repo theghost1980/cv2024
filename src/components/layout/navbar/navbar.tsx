@@ -223,7 +223,7 @@ export const Navbar = ({ classname = "floating" }: Props) => {
           <li>
             <Button
               title="projects"
-              onClick={() => {}}
+              onClick={() => handleNavigate("/projects")}
               buttonStyleType={"secondary"}
               additionalClassname="button-menu"
             />

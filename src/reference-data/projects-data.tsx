@@ -1,4 +1,5 @@
 import { BgImageFileName } from "../components/common/background-image/background-image";
+import { IconPathName } from "../components/common/icon/icon";
 
 export const PROJECTS_DATA_CARD_LIST = [
   {
@@ -10,7 +11,14 @@ export const PROJECTS_DATA_CARD_LIST = [
     companyLinkURL: "https://theghost1980.github.io/roccoOldSite/",
     projectLinkCode: "https://github.com/theghost1980/roccoOldSite",
     description: "data.project.rocco_website.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.TYPESCRIPT,
+      IconPathName.REACT,
+      IconPathName.JAVASCRIPT,
+      IconPathName.HTML_5,
+      IconPathName.GITHUB,
+      IconPathName.CSS_3,
+    ],
     images: [
       "./assets/images/projects/rocco/rocco-1.png",
       "./assets/images/projects/rocco/rocco-2.png",
@@ -27,7 +35,15 @@ export const PROJECTS_DATA_CARD_LIST = [
     companyLinkURL: "https://frosty-poincare-a18064.netlify.app/",
     projectLinkCode: "https://github.com/theghost1980/newportfolio",
     description: "data.project.rocco_website.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.REACT,
+      IconPathName.JAVASCRIPT,
+      IconPathName.HTML_5,
+      IconPathName.GITHUB,
+      IconPathName.CSS_3,
+      IconPathName.PAYPAL,
+      IconPathName.EMAIL,
+    ],
     images: [
       "./assets/images/projects/old-portfolio/old-portfolio-1.png",
       "./assets/images/projects/old-portfolio/old-portfolio-2.png",
@@ -45,7 +61,15 @@ export const PROJECTS_DATA_CARD_LIST = [
     companyLinkURL: "https://awesome-hoover-fbbbdc.netlify.app/",
     projectLinkCode: "https://github.com/theghost1980/jobaboard",
     description: "data.project.jobaboard_website.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.NODEJS,
+      IconPathName.MONGO,
+      IconPathName.REACT,
+      IconPathName.GATSBY,
+      IconPathName.BLOCKCHAIN,
+      IconPathName.HEROKU,
+      IconPathName.CDN,
+    ],
     images: [
       "./assets/images/projects/jobaboard/jobaboard-1.png",
       "./assets/images/projects/jobaboard/jobaboard-2.png",
@@ -62,7 +86,15 @@ export const PROJECTS_DATA_CARD_LIST = [
     companyLinkURL: "https://nansystems.us/",
     projectLinkCode: "https://github.com/theghost1980/testNanSystems",
     description: "data.project.nansystems_website.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.GRAPHQL,
+      IconPathName.CONTENTFUL,
+      IconPathName.GATSBY,
+      IconPathName.REACT,
+      IconPathName.CSS_3,
+      IconPathName.EMAIL,
+      IconPathName.NETLIFY,
+    ],
     images: [
       "./assets/images/projects/nansystems/nansystems-1.png",
       "./assets/images/projects/nansystems/nansystems-2.png",
@@ -79,7 +111,13 @@ export const PROJECTS_DATA_CARD_LIST = [
     companyLinkURL: "https://cranky-blackwell-3641eb.netlify.app/",
     projectLinkCode: "https://github.com/theghost1980/landingpage",
     description: "data.project.landing_website.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.REACT,
+      IconPathName.GATSBY,
+      IconPathName.CSS_3,
+      IconPathName.HTML_5,
+      IconPathName.NETLIFY,
+    ],
     images: [
       "./assets/images/projects/landing/landing-1.png",
       "./assets/images/projects/landing/landing-2.png",
@@ -98,7 +136,14 @@ export const PROJECTS_DATA_CARD_LIST = [
     projectLinkCode:
       "https://github.com/hive-keychain/hive-keychain-extension/blob/tests/fix-tests-17022023/src/__tests__/content-scripts/web-interface/response.logic.test.ts",
     description: "data.project.landing_website.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.REACT,
+      IconPathName.TYPESCRIPT,
+      IconPathName.JEST,
+      IconPathName.RTL,
+      IconPathName.WEBPACK,
+      IconPathName.GITHUB,
+    ],
     images: [
       "./assets/images/projects/ci-test/ci-test-1.png",
       "./assets/images/projects/ci-test/ci-test-2.png",
@@ -114,7 +159,13 @@ export const PROJECTS_DATA_CARD_LIST = [
       "https://play.google.com/store/apps/details?id=com.keychainstore&hl=es_419",
     projectLinkCode: "https://github.com/hive-keychain/keychain-store",
     description: "data.project.keychain_store.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.REACT,
+      IconPathName.TYPESCRIPT,
+      IconPathName.ANDROID,
+      IconPathName.BLOCKCHAIN,
+      IconPathName.PLAYSTORE,
+    ],
     images: [
       "./assets/images/projects/keychain-store/keychain-store-1.png",
       "./assets/images/projects/keychain-store/keychain-store-2.png",
@@ -130,7 +181,14 @@ export const PROJECTS_DATA_CARD_LIST = [
     companyLinkURL: "https://play.hive-keychain.com/",
     projectLinkCode: "https://github.com/hive-keychain/keychain-sdk-playground",
     description: "data.project.keychain_playground_website.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.REACT,
+      IconPathName.TYPESCRIPT,
+      IconPathName.BLOCKCHAIN,
+      IconPathName.JAVASCRIPT,
+      IconPathName.BOOTSTRAP,
+      IconPathName.SDK,
+    ],
     images: [
       "./assets/images/projects/keychain-playground/keychain-playground-1.png",
       "./assets/images/projects/keychain-playground/keychain-playground-2.png",
@@ -145,7 +203,14 @@ export const PROJECTS_DATA_CARD_LIST = [
       "https://swapwidget.hive-keychain.com/?username=theghost1980",
     projectLinkCode: "https://github.com/hive-keychain/swap-widget",
     description: "data.project.keychain_widget_website.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.ANDROID,
+      IconPathName.ANDROID_STUDIO,
+      IconPathName.REACT,
+      IconPathName.TYPESCRIPT,
+      IconPathName.BLOCKCHAIN,
+      IconPathName.WEBPACK,
+    ],
     images: ["./assets/images/projects/keychain-widget/keychain-widget-1.png"],
   },
   {
@@ -156,7 +221,13 @@ export const PROJECTS_DATA_CARD_LIST = [
     companyLinkURL: "https://github.com/hive-keychain/keychain-sdk",
     projectLinkCode: "https://github.com/hive-keychain/keychain-sdk",
     description: "data.project.keychain_sdk.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.REACT,
+      IconPathName.TYPESCRIPT,
+      IconPathName.BLOCKCHAIN,
+      IconPathName.WEBPACK,
+      IconPathName.NPM,
+    ],
     images: [
       "./assets/images/projects/keychain-sdk/keychain-sdk-1.png",
       "./assets/images/projects/keychain-sdk/keychain-sdk-2.png",
@@ -170,7 +241,13 @@ export const PROJECTS_DATA_CARD_LIST = [
     companyLinkURL: "https://tutorial.hive-keychain.com/",
     projectLinkCode: "https://github.com/hive-keychain/tutorial",
     description: "data.project.keychain_tutorial_website.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.GITHUB_PAGES,
+      IconPathName.GITHUB,
+      IconPathName.REACT,
+      IconPathName.TYPESCRIPT,
+      IconPathName.ANDROID,
+    ],
     images: [
       "./assets/images/projects/keychain-tutorial/keychain-tutorial-1.png",
       "./assets/images/projects/keychain-tutorial/keychain-tutorial-2.png",
@@ -188,7 +265,13 @@ export const PROJECTS_DATA_CARD_LIST = [
     projectLinkCode:
       "https://github.com/hive-keychain/hive-keychain-mobile/blob/dev/android/app/src/main/java/com/mobilekeychain/WidgetCurrencyListService.java",
     description: "data.project.keychain_mobile_widgets.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.JAVA,
+      IconPathName.ANDROID,
+      IconPathName.ANDROID_STUDIO,
+      IconPathName.REACT,
+      IconPathName.TYPESCRIPT,
+    ],
     images: [
       "./assets/images/projects/keychain-mobile-widget/keychain-mobile-widget-1.png",
     ],
@@ -203,7 +286,14 @@ export const PROJECTS_DATA_CARD_LIST = [
       "https://play.google.com/store/search?q=keychain&c=apps&hl=es_419",
     projectLinkCode: "https://github.com/hive-keychain/hive-keychain-mobile",
     description: "data.project.keychain_mobile_newui.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.JAVA,
+      IconPathName.ANDROID,
+      IconPathName.ANDROID_STUDIO,
+      IconPathName.REACT,
+      IconPathName.TYPESCRIPT,
+      IconPathName.FIGMA,
+    ],
     images: [
       "./assets/images/projects/keychain-new-ui/keychain-new-ui-1.png",
       "./assets/images/projects/keychain-new-ui/keychain-new-ui-2.png",
@@ -219,7 +309,15 @@ export const PROJECTS_DATA_CARD_LIST = [
     projectLinkCode:
       "https://github.com/hive-keychain/hive-keychain-extension/tree/master/src/portfolio",
     description: "data.project.keychain_extension_portfolio.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [
+      IconPathName.REACT,
+      IconPathName.TYPESCRIPT,
+      IconPathName.CHROME,
+      IconPathName.CSS_3,
+      IconPathName.JAVASCRIPT,
+      IconPathName.BLOCKCHAIN,
+      IconPathName.HTML_5,
+    ],
     images: [
       "./assets/images/projects/keychain-portfolio/keychain-portfolio-1.png",
       "./assets/images/projects/keychain-portfolio/keychain-portfolio-2.png",
@@ -234,7 +332,7 @@ export const PROJECTS_DATA_CARD_LIST = [
     companyLinkURL: "https://theghost1980.github.io/google-homepage/",
     projectLinkCode: "https://github.com/theghost1980/google-homepage",
     description: "data.project.first_cv_portfolio.description",
-    project_key_points: ["one", "two", "three"],
+    tech_stack: [IconPathName.HTML_5, IconPathName.CSS_3, IconPathName.GITHUB],
     images: [
       "./assets/images/projects/first-portfolio/first-portfolio-1.png",
       "./assets/images/projects/first-portfolio/first-portfolio-2.png",

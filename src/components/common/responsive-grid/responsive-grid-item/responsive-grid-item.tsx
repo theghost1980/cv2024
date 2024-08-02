@@ -172,6 +172,35 @@ const ResponsiveGridItem = ({
                     </ul>
                   </div>
                 )}
+                {i.tech_stack && (
+                  <div className="div-col-centered">
+                    <div className="div-row-centered margin-bottom-max">
+                      <p className="text-decription">{t("common.tech")}</p>
+                      <Icon
+                        iconPathName={IconPathName.STACK}
+                        width={35}
+                        height={45}
+                        color="white"
+                        additionalClassName="margin-left-min margin-right-min"
+                      />
+                      <p className="text-decription">{t("common.stack")}</p>
+                    </div>
+                    <ul className="ul-list-row">
+                      {i.tech_stack.map((t: IconPathName, index: number) => {
+                        return (
+                          <li key={`${t}-stack-${index}`}>
+                            <Icon
+                              iconPathName={t}
+                              width={80}
+                              height={80}
+                              color="white"
+                            />
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                )}
               </div>
             </div>
             {i.images && (

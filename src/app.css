@@ -13,6 +13,7 @@
   --ceruleo-medium-alpha: #16a0b8bd;
   --vibrant-orange: #e46c3f;
   --vibrant-orange-darker: #cf5f37;
+  --vibrant-orange-lighter: #f47547;
   --text-lighter: #e9e9e9;
   --gray-medium: #ebedeb;
   --light-gray: rgb(245, 237, 235);
@@ -26,7 +27,9 @@
   /* text shadows */
   --shadow-black-half: 4px 4px 4px #00000082;
   --shadow-black-minimum: 1px 1px 1px #00000041;
+  --shadow-black-minimum2: 2px 2px 1px #0000005d;
   --shadow-offset-ceruleo-light: 19px 18px 3px #1fddff79;
+  --shadow-orange-min: 1px 1px 5px #e46b3f76;
 
   /* box shadows */
   --box-shadow-light: rgba(0, 0, 0, 0.462) 1.95px 1.95px 8px 3px;

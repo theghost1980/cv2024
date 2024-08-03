@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./app.css";
 import { About } from "./components/about/about";
+import Faq from "./components/faq/faq";
 import GetInTouch from "./components/get-in-touch/get-in-touch";
 import { Home } from "./components/home/home";
 import { RootLayout } from "./components/layout/root-layout";
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       {
         path: "/get-in-touch",
         element: <GetInTouch />,
+      },
+      {
+        path: "/faq",
+        element: <Faq />,
       },
     ],
   },

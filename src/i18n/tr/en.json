@@ -206,6 +206,52 @@
         "p_1": "I have come from another galaxy, to work with you. it will be a real pleasure to help you make real your ideas.",
         "p_2": "A 'normal guy' trying to always make the difference!"
       }
+    },
+    "faq": {
+      "1": {
+        "q": "What kind of web pages can you create?",
+        "a": "I can design and code: SPA, Static sites, Dynamic Sites, mobile focused sites and responsive sites which can be used on any type of device. Besides that I can deepen into electronics and IOT."
+      },
+      "2": {
+        "q": "Can you handle Backend, Chrome Extensions and APIs creations?",
+        "a": "As a software engineer I have a strong background finding solutions. I am capable of coding: backend, extensions, APIs and virtually anything related by demand."
+      },
+      "3": {
+        "q": "What tools do you use to develop web pages?",
+        "a": "I normally use ReactJS, Typescript and CSS, but I can adapt to a wide range of methodologies like: Material UI, Bootstrap, Figma, Penpot or even AI designing or coding tools. Basically I can adapt easily to the company or clients needs."
+      },
+      "4": {
+        "q": "Can you handle Mobile Development as well?",
+        "a": "Yes, I can code a mobile app using React Native for Android Devices, also I can adapt if I need to code it in Android Studio."
+      },
+      "5": {
+        "q": "What is your experience using ReactJS and Typescript?",
+        "a": "My experience is based in coding components, APIs, SDKs and whatever we may need, from the ground up. When the projects requires more security I code everything from zero. If the project do not require best security practices, then I can go out and dig npm for what I need. Even when finding components in internet I always look at the dependencies, updates, code maintenance, etc."
+      },
+      "6": {
+        "q": "Do you work with headless content management systems (CMS headless)?",
+        "a": "Yes I do. Sometimes a project may require not to code an entire CMS by yourself but, having a way for clients to edit/update/add content to a dynamic or even static website."
+      },
+      "7": {
+        "q": "What kind of databases can you integrate in web pages?",
+        "a": "I can integrate robust solutions like Mongo or SQL, also I can work with more practical and lighter solutions like mariaDB, mySQL, etc."
+      },
+      "8": {
+        "q": "What experience do you have with blockchain technology?",
+        "a": "Until now(2024) I have around +3 years working with web3 and blockchain. I have used web3js, jsonRPC and specific APIs for different blockchain networks. Please visit my projects page, so you can find 'Jobaboard & Keychain' to know more about my web3 experience."
+      },
+      "9": {
+        "q": "How is your approach to work based on the client's needs?",
+        "a": "We have a first conversation about the idea. Depending on how complex it is I can suggest a path or fix a date so I can research and present a first glance about the how. After this stage, I can take time to make an initial design proposal, based on client's data and information. I prefer presenting one design but having different choices about design and other aspects."
+      },
+      "10": {
+        "q": "Do you work full time or by contract?",
+        "a": "I am open to work by contract or full time. What is more important for me is getting the project done and help the client's ideas to become real, sustainable, maintenable and using the cleanest code possible."
+      },
+      "11": {
+        "q": "How do you handle remote working?",
+        "a": "I have a proven record which you can check on my github account on the past 4 years. I organize my time and I work my daily time with no interruptions. My focus is complete the tasks."
+      }
     }
   },
   "contact": {

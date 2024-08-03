@@ -49,6 +49,7 @@ export enum IconPathName {
   FACEBOOK = "common/facebook",
   LINKEDIN = "common/linkedin",
   DOWNLOAD = "common/download",
+  EXPAND = "common/expand",
 }
 
 export enum LogoPathName {

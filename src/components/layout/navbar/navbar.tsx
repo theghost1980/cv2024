@@ -78,7 +78,11 @@ export const Navbar = ({ classname = "floating" }: Props) => {
           to: "/get-in-touch",
         },
       });
-    } else if (location && location.pathname.includes("projects")) {
+    } else if (
+      location &&
+      (location.pathname.includes("projects") ||
+        location.pathname.includes("faq"))
+    ) {
       setClassByRoute("desktop-view");
       setDesktopMenuProps({
         pageTitle: "navigation.page_title.projects",
@@ -267,15 +271,7 @@ export const Navbar = ({ classname = "floating" }: Props) => {
           <li>
             <Button
               title="faq"
-              onClick={() => {}}
-              buttonStyleType={"secondary"}
-              additionalClassname="button-menu"
-            />
-          </li>
-          <li>
-            <Button
-              title="about_website"
-              onClick={() => {}}
+              onClick={() => handleNavigate("/faq")}
               buttonStyleType={"secondary"}
               additionalClassname="button-menu"
             />

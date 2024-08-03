@@ -15,6 +15,7 @@
   --vibrant-orange-darker: #cf5f37;
   --text-lighter: #e9e9e9;
   --gray-medium: #ebedeb;
+  --light-gray: rgb(245, 237, 235);
   --grayish-bg: #ededf0;
   --glassy-gray-bg: #b1b2b56f;
 
@@ -158,6 +159,14 @@
   width: 100%;
 }
 
+.div-col-around {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
 /* Global spacing */
 .margin-left-min {
   margin-left: 4px;
@@ -179,6 +188,10 @@
 }
 .margin-bottom-max {
   margin-bottom: 12px;
+}
+.side-margin-max {
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 /* Global lists */

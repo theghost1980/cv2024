@@ -15,7 +15,9 @@
     "about_website": "About the website",
     "home": "Home",
     "my_design_process": "My process",
-    "download_cv": "Download CV"
+    "download_cv": "Download CV",
+    "submit": "Submit",
+    "ok": "Ok"
   },
   "navigation": {
     "menu": "Menu",
@@ -37,7 +39,11 @@
     "time": "time",
     "my_name": "Saturno",
     "tech": "Tech",
-    "stack": "Stack"
+    "stack": "Stack",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message"
   },
   "data": {
     "work_experience": {
@@ -205,6 +211,16 @@
   "contact": {
     "title_1": "Eng. Saturno Mangieri",
     "title_2": "Frontend Developer",
-    "disclaimer": "I work remotely but I am open to work hybrid, my usual locations are: Venezuela, Argentina and Spain. Please check some of my socials"
+    "disclaimer": "I work remotely but I am open to work hybrid. My usual locations are: Venezuela, Argentina and Spain. Please check some of my socials below",
+    "visit_faq": "If you still have doubts, please check my FAQ section",
+    "submit_button_title": "To prevent spam a captcha will show to continue"
+  },
+  "captcha": {
+    "disclaimer": "Sorry for the troubles but I need to confirm that you are not abusing and that you are a nice human being. Please solve the puzzle to finish the action.",
+    "next_action": "After success, {{action}} Thanks!"
+  },
+  "error": {
+    "mail": "Opps! Please wait for an answer, you have reached max amount of emails.",
+    "alternative_solution": "Try to directly send me a message to saturnob612@gmail.com"
   }
 }

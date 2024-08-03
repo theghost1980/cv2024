@@ -249,7 +249,7 @@ export const Navbar = ({ classname = "floating" }: Props) => {
           <li>
             <Button
               title="contact_me"
-              onClick={() => {}}
+              onClick={() => handleNavigate("/get-in-touch")}
               buttonStyleType={"secondary"}
               additionalClassname="button-menu"
             />

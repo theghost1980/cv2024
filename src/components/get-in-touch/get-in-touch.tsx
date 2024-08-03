@@ -1,13 +1,116 @@
+import emailjs from "@emailjs/browser";
 import { t } from "i18next";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { Form, useNavigate } from "react-router-dom";
+import { checkMail } from "../../utils/mail";
 import {
   BackgroundImage,
   BgImageFileName,
 } from "../common/background-image/background-image";
+import { Button } from "../common/button/button";
+import Captcha from "../common/captcha/captcha";
 import { Icon, IconPathName } from "../common/icon/icon";
+import SendLoader from "../common/send-loader/send-loader";
 import "./get-in-touch.css";
 
+export const SOCIAL_URL_LIST = {
+  facebook: "https://www.facebook.com/saturno.mangieri",
+  linkedin: "https://www.linkedin.com/in/saturno-mangieri/",
+  github: "https://github.com/theghost1980",
+};
+
+const DEFAULT_CONTACT_FORM: ContactForm = {
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+};
+
+interface ContactForm {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
 const GetInTouch = () => {
+  console.log({ e: process.env.emailJS }); //TODO remove line
+  const formRef = useRef<HTMLFormElement>();
+  const [loading, setLoading] = useState(false);
+  const [loadCaptcha, setLoadCaptcha] = useState(false);
+  const [captchaResult, setCaptchaResult] = useState<"success" | "fail" | "">(
+    ""
+  );
+  const [form, setForm] = useState<ContactForm>(DEFAULT_CONTACT_FORM);
+  const [errorMessage, setErrorMessage] = useState({
+    triggered: false,
+    error: t("error.mail"),
+    solution: t("error.alternative_solution"),
+  });
+
+  const navigate = useNavigate();
+
+  const handleErrorMessage = (value: boolean) => {
+    setErrorMessage((prev) => {
+      return { ...prev, triggered: value };
+    });
+  };
+
+  const clearFormData = () => {
+    setForm(DEFAULT_CONTACT_FORM);
+  };
+
+  const handleSubmitForm = (e: any) => {
+    e.preventDefault();
+    if (Object.values(form).every((f) => f.trim().length > 0)) {
+      if (!checkMail()) {
+        console.log(t("error.mail"));
+        handleErrorMessage(true);
+        setTimeout(() => {
+          handleErrorMessage(false);
+        }, 8000);
+      } else {
+        setLoadCaptcha(true);
+      }
+    }
+  };
+
+  useEffect(() => {
+    if (captchaResult === "success") {
+      setLoading(true);
+      emailjs
+        .sendForm(
+          "miscontactosdecelular",
+          "template_0x1c7h8",
+          formRef.current,
+          {
+            publicKey: process.env.emailJS,
+          }
+        )
+        .then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        )
+        .finally(() => {
+          setTimeout(() => {
+            setLoading(false);
+          }, 3000);
+        });
+      clearFormData();
+    }
+    setLoadCaptcha(false);
+  }, [captchaResult]);
+
+  const handleSetDataForm = (name: string, value: string) => {
+    setForm((prevForm) => {
+      return { ...prevForm, [name]: value };
+    });
+  };
+
   return (
     <main className="get-in-touch-page">
       <BackgroundImage
@@ -45,6 +148,7 @@ const GetInTouch = () => {
                     width={40}
                     height={40}
                     color="var(--ceruleo-medium)"
+                    onClick={() => open(SOCIAL_URL_LIST.facebook)}
                   />
                 </li>
                 <li>
@@ -53,6 +157,7 @@ const GetInTouch = () => {
                     width={40}
                     height={40}
                     color="var(--ceruleo-medium)"
+                    onClick={() => open(SOCIAL_URL_LIST.linkedin)}
                   />
                 </li>
                 <li>
@@ -61,6 +166,7 @@ const GetInTouch = () => {
                     width={40}
                     height={40}
                     color="var(--ceruleo-medium)"
+                    onClick={() => open(SOCIAL_URL_LIST.github)}
                   />
                 </li>
                 <li>
@@ -74,9 +180,99 @@ const GetInTouch = () => {
               </ul>
             </div>
           </div>
-          <div className="contact-form"></div>
+          <div className="contact-form">
+            {errorMessage.triggered && (
+              <div className="div-col-around send-loader">
+                <h4 className="header-title-small text-centered side-margin-max">
+                  {errorMessage.error}
+                </h4>
+                <h3 className="header-title-small text-centered side-margin-max">
+                  {errorMessage.solution}
+                </h3>
+                <Button
+                  title={"ok"}
+                  buttonStyleType={"agressive"}
+                  onClick={() => {
+                    clearFormData();
+                    handleErrorMessage(false);
+                  }}
+                />
+              </div>
+            )}
+            {!loading && !errorMessage.triggered && (
+              <Form onSubmit={handleSubmitForm} ref={formRef}>
+                <label className="title-italic" htmlFor="name">
+                  {t("common.name")}
+                </label>
+                <input
+                  id="name"
+                  name="name"
+                  type={"text"}
+                  value={form.name}
+                  onChange={(e) => handleSetDataForm("name", e.target.value)}
+                />
+                <label className="title-italic" htmlFor="email">
+                  {t("common.email")}
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type={"email"}
+                  value={form.email}
+                  onChange={(e) => handleSetDataForm("email", e.target.value)}
+                />
+                <label className="title-italic" htmlFor="subject">
+                  {t("common.subject")}
+                </label>
+                <input
+                  id="subject"
+                  name="subject"
+                  type={"text"}
+                  value={form.subject}
+                  onChange={(e) => handleSetDataForm("subject", e.target.value)}
+                />
+                <label className="title-italic" htmlFor="message">
+                  {t("common.message")}
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={form.message}
+                  onChange={(e) => handleSetDataForm("message", e.target.value)}
+                />
+                <button
+                  type={"submit"}
+                  className="button agressive btn-submit"
+                  title={t("contact.submit_button_title")}
+                >
+                  {t("button.submit")}
+                </button>
+              </Form>
+            )}
+            {loading && (
+              <div className="div-col-centered send-loader">
+                <SendLoader />
+              </div>
+            )}
+            <h3
+              className="header-title-small visit-faq"
+              onClick={() => navigate("/faq")}
+            >
+              {t("contact.visit_faq")}
+            </h3>
+          </div>
         </div>
       </section>
+      {loadCaptcha && (
+        <Captcha
+          next_action_title={t("captcha.next_action", {
+            action: "will Submit your kind message!",
+          })}
+          width={300}
+          height={180}
+          showResult={(res) => setCaptchaResult(res)}
+        />
+      )}
     </main>
   );
 };

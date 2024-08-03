@@ -1,0 +1,41 @@
+.captcha-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 70%;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-medium);
+  padding: 20px;
+  border-radius: 12px;
+
+  .canvasArea {
+    canvas {
+      border-radius: 8px;
+    }
+  }
+  .sliderContainer {
+    border-radius: 8px;
+    .slider {
+      border-radius: 8px;
+    }
+  }
+
+  .close-icon {
+    position: fixed;
+    top: 100px;
+    right: 60px;
+  }
+
+  .disclaimer {
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .next-action-title {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+}

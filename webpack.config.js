@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
+const dotenv = require("dotenv");
+const webpack = require("webpack");
 module.exports = {
   mode: "development",
   entry: "./src/index.tsx",
@@ -51,6 +53,10 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [{ from: "src/assets", to: "assets" }],
+    }),
+    //TODO check how to make the use of .env better with netlify: serverless functions maybe?
+    new webpack.DefinePlugin({
+      "process.env": JSON.stringify(dotenv.config().parsed),
     }),
   ],
 };

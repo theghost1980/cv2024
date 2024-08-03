@@ -27,11 +27,14 @@
   "author": "Saturno Mangieri",
   "license": "MIT",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "copy-webpack-plugin": "^12.0.2",
+    "dotenv": "^16.4.5",
     "i18next": "^23.11.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-i18next": "^14.1.2",
+    "react-puzzle-captcha": "^1.0.2",
     "react-router-dom": "^6.24.1",
     "react-svg": "^16.1.34"
   },

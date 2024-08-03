@@ -2,7 +2,6 @@ import React from "react";
 import BgOverlay from "../overlay/bg-overlay";
 import "./background-image.css";
 
-//TODO create enum file, move
 export enum BgImageFileName {
   HERO = "hero.jpg",
   HERO_SATURNO = "hero_saturno.png",

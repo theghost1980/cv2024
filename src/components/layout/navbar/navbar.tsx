@@ -1,6 +1,7 @@
 import { t } from "i18next";
 import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { downloadCV } from "../../../utils/get-in-touch.utils";
 import {
   BackgroundImage,
   BgImageFileName,
@@ -9,6 +10,12 @@ import { Button } from "../../common/button/button";
 import { Icon, IconPathName } from "../../common/icon/icon";
 import { Separator } from "../../common/separator/separator";
 import "./navbar.css";
+
+export interface CTAButtonData {
+  title: string;
+  to?: string;
+  action?: () => void;
+}
 
 interface Props {
   classname?: string;
@@ -27,10 +34,7 @@ export const Navbar = ({ classname = "floating" }: Props) => {
       title: string;
       to: string;
     };
-    ctaButton: {
-      title: string;
-      to: string;
-    };
+    ctaButton: CTAButtonData;
   }>();
 
   const navigate = useNavigate();
@@ -105,8 +109,7 @@ export const Navbar = ({ classname = "floating" }: Props) => {
         },
         ctaButton: {
           title: "download_cv",
-          //TODO add action option to directly download file
-          to: "/get-in-touch",
+          action: downloadCV,
         },
       });
     }
@@ -116,6 +119,11 @@ export const Navbar = ({ classname = "floating" }: Props) => {
     navigate(to);
     setClassByRoute("");
     setIsOpen(false);
+  };
+
+  const handleActionOrNavigate = (ctaButton: CTAButtonData) => {
+    if (ctaButton.action) return ctaButton.action();
+    if (ctaButton.to) handleNavigate(ctaButton.to);
   };
 
   return (
@@ -157,7 +165,9 @@ export const Navbar = ({ classname = "floating" }: Props) => {
               <Button
                 title={desktopMenuProps.ctaButton.title}
                 buttonStyleType={"secondary"}
-                onClick={() => handleNavigate(desktopMenuProps.ctaButton.to)}
+                onClick={() => {
+                  handleActionOrNavigate(desktopMenuProps.ctaButton);
+                }}
                 additionalClassname="button-my-design"
               />
               <Icon

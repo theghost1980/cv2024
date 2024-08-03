@@ -46,13 +46,12 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "public/index.html",
-      //TODO below add favicon
-      //   favicon: "./src/assets/svg/saturno.svg",
-    }),
     new CopyPlugin({
       patterns: [{ from: "src/assets", to: "assets" }],
+    }),
+    new HtmlWebpackPlugin({
+      template: "public/index.html",
+      favicon: "./src/assets/images/svg/common/saturn.svg",
     }),
     //TODO check how to make the use of .env better with netlify: serverless functions maybe?
     new webpack.DefinePlugin({

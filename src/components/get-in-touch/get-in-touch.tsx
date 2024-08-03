@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser";
 import { t } from "i18next";
 import React, { useEffect, useRef, useState } from "react";
 import { Form, useNavigate } from "react-router-dom";
+import { downloadCV } from "../../utils/get-in-touch.utils";
 import { checkMail } from "../../utils/mail";
 import {
   BackgroundImage,
@@ -175,6 +176,7 @@ const GetInTouch = () => {
                     width={40}
                     height={40}
                     color="var(--ceruleo-medium)"
+                    onClick={downloadCV}
                   />
                 </li>
               </ul>

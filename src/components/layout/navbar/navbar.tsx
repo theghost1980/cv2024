@@ -1,5 +1,6 @@
 import { t } from "i18next";
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import { downloadCV } from "../../../utils/get-in-touch.utils";
 import {
@@ -22,6 +23,7 @@ interface Props {
 }
 
 export const Navbar = ({ classname = "floating" }: Props) => {
+  const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [classByRoute, setClassByRoute] = useState<string>("");
   const [desktopMenuProps, setDesktopMenuProps] = useState<{
@@ -130,6 +132,11 @@ export const Navbar = ({ classname = "floating" }: Props) => {
     if (ctaButton.to) handleNavigate(ctaButton.to);
   };
 
+  const handleSwitchTranslation = async () => {
+    const lang = i18n.language;
+    await i18n.changeLanguage(lang === "en" ? "es" : "en");
+  };
+
   return (
     <nav
       className={`${classname} ${
@@ -213,6 +220,14 @@ export const Navbar = ({ classname = "floating" }: Props) => {
         />
       )}
       <div className={`menu-${isOpen ? "opened" : "closed"}`}>
+        <Icon
+          iconPathName={IconPathName.TRANSLATE}
+          width={30}
+          height={30}
+          color="white"
+          additionalClassName="translate-icon"
+          onClick={handleSwitchTranslation}
+        />
         <Separator
           width="100%"
           height="65px"

@@ -1,0 +1,48 @@
+{
+  "hero_section": {
+    "title": {
+      "part_1": "Vamos a hacer una página web: ",
+      "part_2": "Más allá del código"
+    },
+    "intro": "Hola mi nombre es Saturno Mangieri y soy desarrollador web, especializado en frontend. Estoy aquí para ayudarte a crear experiencias de usuario increíbles."
+  },
+  "button": {
+    "about_me": "Acerca de mí",
+    "contact_me": "Ponte en contacto",
+    "work_experience": "Experiencia laboral",
+    "projects": "Proyectos",
+    "faq": "F.A.Q",
+    "about_website": "Acerca del sitio web",
+    "home": "Inicio",
+    "my_design_process": "Mi proceso",
+    "download_cv": "Descargar CV",
+    "submit": "Enviar",
+    "ok": "Ok"
+  },
+  "navigation": {
+    "menu": "Menu",
+    "page_title": {
+      "about_me": "Nice to meet you",
+      "work_experience": "Experiencia laboral",
+      "projects": "Proyectos",
+      "get_in_touch": "Pongámonos en contacto"
+    }
+  },
+  "common": {
+    "work": "trabajo",
+    "projects": "Proyectos",
+    "what_was_acommplished": "¿Qué se logró?",
+    "at": "en",
+    "click_to_enlarge": "¡Haz clic para verlo completo!",
+    "click_to_close": "¡Clic para cerrar!",
+    "in": "En",
+    "time": "tiempo",
+    "my_name": "Saturno",
+    "tech": "Tech",
+    "stack": "Stack",
+    "name": "Nombre",
+    "email": "Email",
+    "subject": "Asunto",
+    "message": "Mensaje"
+  }
+}

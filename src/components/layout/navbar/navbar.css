@@ -85,6 +85,13 @@ nav {
       }
     }
 
+    .translate-icon {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      z-index: 100;
+    }
+
     .close-icon {
       position: absolute;
       right: 20px;

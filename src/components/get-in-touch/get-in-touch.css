@@ -85,10 +85,10 @@
           opacity: 0.4;
           transition: all 0.4s;
           z-index: 35;
+          text-decoration: underline;
           &:hover {
             opacity: 1;
             cursor: pointer;
-            text-decoration: underline;
           }
         }
 
@@ -150,6 +150,20 @@
           }
           .disclaimer {
             font-size: 1.4vw;
+          }
+        }
+        .contact-form {
+          .visit-faq {
+            font-size: 1.25vw;
+          }
+          form {
+            label {
+              font-size: 1.35vw;
+            }
+            input,
+            textarea {
+              font-size: 1.3vw;
+            }
           }
         }
       }

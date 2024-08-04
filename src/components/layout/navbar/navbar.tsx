@@ -1,4 +1,3 @@
-import { t } from "i18next";
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -20,9 +19,13 @@ export interface CTAButtonData {
 
 interface Props {
   classname?: string;
+  handleSwitchTranslation: () => void;
 }
 
-export const Navbar = ({ classname = "floating" }: Props) => {
+export const Navbar = ({
+  classname = "floating",
+  handleSwitchTranslation,
+}: Props) => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [classByRoute, setClassByRoute] = useState<string>("");
@@ -39,6 +42,7 @@ export const Navbar = ({ classname = "floating" }: Props) => {
     ctaButton: CTAButtonData;
   }>();
 
+  const { t } = useTranslation();
   const navigate = useNavigate();
   let location = useLocation();
 
@@ -132,11 +136,6 @@ export const Navbar = ({ classname = "floating" }: Props) => {
     if (ctaButton.to) handleNavigate(ctaButton.to);
   };
 
-  const handleSwitchTranslation = async () => {
-    const lang = i18n.language;
-    await i18n.changeLanguage(lang === "en" ? "es" : "en");
-  };
-
   return (
     <nav
       className={`${classname} ${
@@ -179,6 +178,7 @@ export const Navbar = ({ classname = "floating" }: Props) => {
                 onClick={() => {
                   handleActionOrNavigate(desktopMenuProps.ctaButton);
                 }}
+                //TODO decide if making it same as about...
                 additionalClassname="button-my-design"
               />
               <Icon

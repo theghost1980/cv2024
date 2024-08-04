@@ -1,17 +1,17 @@
 {
   "hero_section": {
     "title": {
-      "part_1": "Vamos a hacer una página web: ",
+      "part_1": "Hagamos una web: ",
       "part_2": "Más allá del código"
     },
-    "intro": "Hola mi nombre es Saturno Mangieri y soy desarrollador web, especializado en frontend. Estoy aquí para ayudarte a crear experiencias de usuario increíbles."
+    "intro": "Hola mi nombre es Saturno Mangieri y soy desarrollador web, especializado en frontend. Estoy aquí para ayudarte a crear experiencias de usuario increíbles a través de aplicaciones web y aplicaciones móviles."
   },
   "button": {
-    "about_me": "Acerca de mí",
-    "contact_me": "Ponte en contacto",
+    "about_me": "Sobre mí",
+    "contact_me": "Contacto",
     "work_experience": "Experiencia laboral",
     "projects": "Proyectos",
-    "faq": "F.A.Q",
+    "faq": "Preguntas Frecuentes",
     "about_website": "Acerca del sitio web",
     "home": "Inicio",
     "my_design_process": "Mi proceso",
@@ -29,7 +29,7 @@
     }
   },
   "common": {
-    "work": "trabajo",
+    "work": "Trabajos",
     "projects": "Proyectos",
     "what_was_acommplished": "¿Qué se logró?",
     "at": "en",

@@ -1,5 +1,5 @@
-import { t } from "i18next";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Verify } from "react-puzzle-captcha";
 import "react-puzzle-captcha/dist/react-puzzle-captcha.css";
 import { Icon, IconPathName } from "../icon/icon";
@@ -13,6 +13,7 @@ interface Props {
 }
 
 const Captcha = ({ next_action_title, width, height, showResult }: Props) => {
+  const { t } = useTranslation();
   return (
     <div className="full-overlay">
       <div className="captcha-container">

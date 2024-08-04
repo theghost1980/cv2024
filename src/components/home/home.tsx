@@ -1,5 +1,5 @@
-import { t } from "i18next";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import {
   BackgroundImage,
@@ -9,6 +9,7 @@ import { Button } from "../common/button/button";
 import "./home.css";
 
 export const Home = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
 
   return (

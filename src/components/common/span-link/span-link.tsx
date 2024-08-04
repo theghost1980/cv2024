@@ -1,5 +1,5 @@
-import { t } from "i18next";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./span-link.css";
 
 interface Props {
@@ -8,6 +8,7 @@ interface Props {
 }
 
 const SpanLink = ({ titleLink, link }: Props) => {
+  const { t } = useTranslation();
   return (
     <span
       title={`visit ${link}`}

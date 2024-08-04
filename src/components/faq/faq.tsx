@@ -1,5 +1,5 @@
-import { t } from "i18next";
-import React, { useState } from "react";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import { FAQ_DATA_CARD_LIST } from "../../reference-data/faq-data";
 import {
   BackgroundImage,
@@ -9,12 +9,7 @@ import FaqItem from "./faq-item";
 import "./faq.css";
 
 const Faq = () => {
-  const [allCollapsed, setAllCollapsed] = useState(true);
-
-  const handleExpandCollapseAll = () => {
-    setAllCollapsed(!allCollapsed);
-  };
-
+  const { t } = useTranslation();
   return (
     <main className="faq-page">
       <BackgroundImage

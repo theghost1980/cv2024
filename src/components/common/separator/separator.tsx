@@ -1,5 +1,5 @@
-import { t } from "i18next";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./separator.css";
 
 interface Props {
@@ -23,6 +23,7 @@ export const Separator = ({
     marginBottom: `${marginBottom}px`,
     position: "relative",
   } as React.CSSProperties;
+  const { t } = useTranslation();
   if (drawLine) {
     separatorStyle["borderBottom"] = "1px";
     separatorStyle["borderBottomStyle"] = "solid";

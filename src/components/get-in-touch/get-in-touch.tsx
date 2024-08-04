@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
-import { t } from "i18next";
 import React, { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Form, useNavigate } from "react-router-dom";
 import { downloadCV } from "../../utils/get-in-touch.utils";
 import { checkMail } from "../../utils/mail";
@@ -35,7 +35,7 @@ interface ContactForm {
 }
 
 const GetInTouch = () => {
-  console.log({ e: process.env.emailJS }); //TODO remove line
+  const { t } = useTranslation();
   const formRef = useRef<HTMLFormElement>();
   const [loading, setLoading] = useState(false);
   const [loadCaptcha, setLoadCaptcha] = useState(false);

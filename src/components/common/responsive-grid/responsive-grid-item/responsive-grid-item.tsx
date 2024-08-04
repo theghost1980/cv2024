@@ -1,5 +1,5 @@
-import { t } from "i18next";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import ImageExpandable from "../../../image-expandable/image-expandable";
 import { Icon, IconPathName } from "../../icon/icon";
 import BgOverlay from "../../overlay/bg-overlay";
@@ -17,6 +17,7 @@ const ResponsiveGridItem = ({
   removeGradientOverlay,
   minAlpha,
 }: Props) => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   const renderCompanyLink = (i: any) => {

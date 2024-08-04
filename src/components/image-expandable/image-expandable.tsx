@@ -1,5 +1,5 @@
-import { t } from "i18next";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./image-expandable.css";
 
 interface Props {
@@ -8,6 +8,7 @@ interface Props {
 }
 
 const ImageExpandable = ({ className, source }: Props) => {
+  const { t } = useTranslation();
   const [isFullView, setIsFullView] = useState(false);
 
   return (

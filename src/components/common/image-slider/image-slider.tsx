@@ -1,9 +1,10 @@
-import { t } from "i18next";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Icon, IconPathName } from "../icon/icon";
 import "./image-slider.css";
 
 const ImageSlider = () => {
+  const { t } = useTranslation();
   const [active, setActive] = useState(0);
 
   const handleClick = (toActivate: number) => {

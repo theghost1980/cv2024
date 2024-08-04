@@ -1,5 +1,5 @@
-import { t } from "i18next";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./button.css";
 
 interface Props {
@@ -15,6 +15,7 @@ export const Button = ({
   additionalClassname,
   buttonStyleType,
 }: Props) => {
+  const { t } = useTranslation();
   return (
     <button
       title={title}

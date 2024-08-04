@@ -208,6 +208,12 @@
       }
     },
     "faq": {
+      "top": {
+        "title": {
+          "part_1": "Let's answer your questions.",
+          "part_2": "I'll do my best!"
+        }
+      },
       "1": {
         "q": "What kind of web pages can you create?",
         "a": "I can design and code: SPA, Static sites, Dynamic Sites, mobile focused sites and responsive sites which can be used on any type of device. Besides that I can deepen into electronics and IOT."

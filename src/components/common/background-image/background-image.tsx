@@ -31,6 +31,7 @@ export enum BgImageFileName {
   KEYCHAIN_MOBILE_NEWUI = "/cards/keychain-mobile-newui.webp",
   KEYCHAIN_EXTENSION_PORTFOLIO = "/cards/keychain-extension-portfolio.png",
   FIRST_CV_PORTFOLIO = "/cards/first-cv-portfolio.png",
+  TECH_SUPPORT = "tech_support.png",
 }
 
 interface Props {

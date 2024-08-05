@@ -13,8 +13,8 @@ import "./i18n/config";
 
 //TODO important after finishing the website:
 //  - upload using netlify use same name as the one: https://saturnomangieri.netlify.app/
-//  - test img loading to see if needed an image placeholder while images are loading.
 //  - make a new CV based on same website design(content, design) and add download option.
+// - TODO IMPORTANT make a match between CV and Linkedin profile ASAP.
 
 const router = createBrowserRouter([
   {

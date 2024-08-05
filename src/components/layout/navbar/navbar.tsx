@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
-import { downloadCV } from "../../../utils/get-in-touch.utils";
 import {
   BackgroundImage,
   BgImageFileName,
 } from "../../common/background-image/background-image";
 import { Button } from "../../common/button/button";
+import CvDownloadOverlay from "../../common/cv-download-overlay/cv-download-overlay";
 import { Icon, IconPathName } from "../../common/icon/icon";
 import { Separator } from "../../common/separator/separator";
 import "./navbar.css";
@@ -29,6 +29,7 @@ export const Navbar = ({
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [classByRoute, setClassByRoute] = useState<string>("");
+  const [showDownloadCvOverlay, setShowDownloadCvOverlay] = useState(false);
   const [desktopMenuProps, setDesktopMenuProps] = useState<{
     pageTitle: string;
     linkOne: {
@@ -118,11 +119,18 @@ export const Navbar = ({
         },
         ctaButton: {
           title: "download_cv",
-          action: downloadCV,
+          action: showDowloadCvSection,
         },
       });
     }
   }, [location]);
+
+  const showDowloadCvSection = () => {
+    setShowDownloadCvOverlay(true);
+    setTimeout(() => {
+      setShowDownloadCvOverlay(false);
+    }, 6000);
+  };
 
   const handleNavigate = (to: string) => {
     navigate(to);
@@ -141,6 +149,7 @@ export const Navbar = ({
         isOpen ? "full-height" : "adjust-top"
       } ${classByRoute}`}
     >
+      {showDownloadCvOverlay && <CvDownloadOverlay />}
       {/* Menu desktop */}
       {!isOpen && classByRoute === "desktop-view" && (
         <div className="nav-bar-desktop">

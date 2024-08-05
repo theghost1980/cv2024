@@ -1,0 +1,12 @@
+h1 {
+    font-family: var(--primary-header);
+    color: var(--ceruleo-light);
+}
+
+h2{
+    font-family: var(--secondary-header);
+}
+
+p {
+    font-family: var(--content-small);
+}

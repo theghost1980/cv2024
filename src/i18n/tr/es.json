@@ -44,7 +44,8 @@
     "name": "Nombre",
     "email": "Email",
     "subject": "Asunto",
-    "message": "Mensaje"
+    "message": "Mensaje",
+    "cv_download_title": "Elija Descargar ES o EN"
   },
   "data": {
     "work_experience": {

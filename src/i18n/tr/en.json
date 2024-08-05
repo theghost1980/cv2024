@@ -44,7 +44,8 @@
     "name": "Name",
     "email": "Email",
     "subject": "Subject",
-    "message": "Message"
+    "message": "Message",
+    "cv_download_title": "Choose CV Language and click to download"
   },
   "data": {
     "work_experience": {

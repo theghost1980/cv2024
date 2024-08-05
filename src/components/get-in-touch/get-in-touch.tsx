@@ -2,7 +2,6 @@ import emailjs from "@emailjs/browser";
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Form, useNavigate } from "react-router-dom";
-import { downloadCV } from "../../utils/get-in-touch.utils";
 import { checkMail } from "../../utils/mail";
 import {
   BackgroundImage,
@@ -10,6 +9,7 @@ import {
 } from "../common/background-image/background-image";
 import { Button } from "../common/button/button";
 import Captcha from "../common/captcha/captcha";
+import CvDownloadOverlay from "../common/cv-download-overlay/cv-download-overlay";
 import { Icon, IconPathName } from "../common/icon/icon";
 import SendLoader from "../common/send-loader/send-loader";
 import "./get-in-touch.css";
@@ -48,6 +48,7 @@ const GetInTouch = () => {
     error: "error.mail",
     solution: "error.alternative_solution",
   });
+  const [showCVDownloadOverlay, setShowCVDownloadOverlay] = useState(false);
 
   const navigate = useNavigate();
 
@@ -113,8 +114,16 @@ const GetInTouch = () => {
     });
   };
 
+  const handleShowCVOverlay = () => {
+    setShowCVDownloadOverlay(true);
+    setTimeout(() => {
+      setShowCVDownloadOverlay(false);
+    }, 6000);
+  };
+
   return (
     <main className="get-in-touch-page">
+      {showCVDownloadOverlay && <CvDownloadOverlay />}
       <BackgroundImage
         bgImageFileName={BgImageFileName.CONTACT}
         overlayColor={{
@@ -177,7 +186,7 @@ const GetInTouch = () => {
                     width={40}
                     height={40}
                     color="var(--ceruleo-medium)"
-                    onClick={downloadCV}
+                    onClick={handleShowCVOverlay}
                   />
                 </li>
               </ul>

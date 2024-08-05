@@ -30,20 +30,7 @@
 .slider-images .slider-img {
   height: 500px;
 }
-/* //TODO after finishing cleanup unused */
-/* .slider-images .slider-img:first-child,
-.slider-images .slider-img:last-child {
-  height: 480px;
-}
-.slider-images .slider-img:nth-child(2),
-.slider-images .slider-img:nth-child(6) {
-  height: 560px;
-}
-.slider-images .slider-img:nth-child(3),
-.slider-images .slider-img:nth-child(4),
-.slider-images .slider-img:nth-child(5) {
-  height: 665px;
-} */
+
 h1 {
   font-family: var(--primary-header);
   font-size: 40px;

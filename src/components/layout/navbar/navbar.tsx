@@ -62,11 +62,6 @@ export const Navbar = ({
           title: "common.projects",
           to: "/projects",
         },
-        //TODO not created for now, uncomment + code in future if needed.
-        // ctaButton: {
-        //   title: "my_design_process",
-        //   to: "/zero-to-hero",
-        // },
       });
     } else if (location && location.pathname.includes("work")) {
       setClassByRoute("desktop-view");

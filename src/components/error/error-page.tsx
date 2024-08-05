@@ -53,9 +53,9 @@ const ErrorPage = () => {
         </div>
         <Icon
           iconPathName={IconPathName.HOME}
-          width={40}
-          height={40}
-          color="rgb(22, 160, 184);"
+          width={80}
+          height={80}
+          color="var(--lighter-tone)"
           additionalClassName="left-margin"
           onClick={() => navigate("/")}
         />

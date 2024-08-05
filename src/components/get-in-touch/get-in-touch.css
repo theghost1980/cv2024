@@ -207,6 +207,7 @@
   @media (width < 762px) {
     .contact-section {
       .contact-divider {
+        top: 70px;
         .contact-form {
           width: 70%;
         }

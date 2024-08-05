@@ -293,6 +293,12 @@
             height: 30px !important;
           }
         }
+        .ul-list-row {
+          svg {
+            width: 40px !important;
+            height: 40px !important;
+          }
+        }
       }
     }
     .content-images {

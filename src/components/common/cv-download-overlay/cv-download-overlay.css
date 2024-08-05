@@ -5,13 +5,20 @@
   z-index: 130;
   width: 100%;
   height: 100%;
-  background-color: #232629e6;
+  background-color: #16a0b8;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .row {
     height: 100%;
+
+    .flag-us {
+      animation: sizes 1.1s ease-in-out infinite;
+    }
+    .flag-ve {
+      animation: sizes 0.8s ease-in-out infinite;
+    }
 
     .title {
       color: var(--lighter-tone);

@@ -15,17 +15,18 @@ const CvDownloadOverlay = () => {
         <Icon
           iconPathName={IconPathName.FLAG_UNITED_STATES}
           width={50}
-          height={40}
+          height={50}
           color="white"
-          additionalClassName="margin-left-max margin-right-max"
+          additionalClassName="margin-left-max margin-right-max flag-us"
           onClick={() => downloadCV("en")}
         />
         <Icon
           iconPathName={IconPathName.FLAG_VENEZUELA}
           width={50}
-          height={40}
+          height={50}
           color="white"
           onClick={() => downloadCV("es")}
+          additionalClassName="flag-ve"
         />
       </div>
     </div>

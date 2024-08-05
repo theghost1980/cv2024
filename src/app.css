@@ -266,3 +266,12 @@
     opacity: 1;
   }
 }
+
+@keyframes sizes {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1.01);
+  }
+}

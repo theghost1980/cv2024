@@ -218,6 +218,14 @@
   border: 2px solid var(--vibrant-orange);
 }
 
+/* Global img */
+.img-loading {
+  animation: fadeAnim 0.7s ease-in-out infinite;
+}
+.img-loaded {
+  animation: none;
+}
+
 /* Global animations */
 @keyframes fadeIn {
   from {
@@ -244,5 +252,14 @@
   }
   50% {
     top: 150px;
+  }
+}
+
+@keyframes fadeAnim {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
   }
 }

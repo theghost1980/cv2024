@@ -10,17 +10,21 @@ interface Props {
 const ImageExpandable = ({ className, source }: Props) => {
   const { t } = useTranslation();
   const [isFullView, setIsFullView] = useState(false);
+  const [isImageLoading, setIsImageLoading] = useState(true);
 
   return (
     <>
       <img
         src={source}
         alt={source}
-        className={className}
+        className={`${className} ${
+          isImageLoading ? "img-loading" : "img-loaded"
+        }`}
         onClick={() => setIsFullView(true)}
         title={t("common.click_to_enlarge")}
+        onLoad={() => setIsImageLoading(false)}
       />
-      {isFullView && (
+      {isFullView && !isImageLoading && (
         <div className="full-overlay">
           <img
             src={source}

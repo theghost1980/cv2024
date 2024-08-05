@@ -9,6 +9,10 @@
   /* end blur */
   border-radius: 8px;
 
+  img {
+    background-color: var(--lighter-tone);
+  }
+
   .grid-overlay {
     display: block;
     position: fixed;

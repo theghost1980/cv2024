@@ -19,6 +19,7 @@ const ResponsiveGridItem = ({
 }: Props) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoadingImage, setIsLoadingImage] = useState(true);
 
   const renderCompanyLink = (i: any) => {
     return i.companyLinkURL ? (
@@ -69,7 +70,7 @@ const ResponsiveGridItem = ({
                     additionalClassName="margin-right-min"
                   />
                 )}
-                {t(i.title)}
+                {!isLoadingImage && t(i.title)}
               </div>
             </div>
             {i.flagIcon && !i.include_flag_in_title && (
@@ -82,7 +83,11 @@ const ResponsiveGridItem = ({
             )}
           </div>
         </div>
-        <img src={`./assets/images/bg/${i.bgCard}`} />
+        <img
+          src={`./assets/images/bg/${i.bgCard}`}
+          onLoad={() => setIsLoadingImage(false)}
+          className={isLoadingImage ? "img-loading" : "img-loaded"}
+        />
       </div>
       {isOpen && (
         <div className="opened-overlay">

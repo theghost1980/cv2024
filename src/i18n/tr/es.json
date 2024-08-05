@@ -22,10 +22,11 @@
   "navigation": {
     "menu": "Menu",
     "page_title": {
-      "about_me": "Nice to meet you",
+      "about_me": "Gusto en conocerte",
       "work_experience": "Experiencia laboral",
       "projects": "Proyectos",
-      "get_in_touch": "Pongámonos en contacto"
+      "get_in_touch": "Contactame",
+      "faq": "Preguntas Frecuentes"
     }
   },
   "common": {
@@ -44,5 +45,244 @@
     "email": "Email",
     "subject": "Asunto",
     "message": "Mensaje"
+  },
+  "data": {
+    "work_experience": {
+      "keychain": {
+        "title": "Ingeniero Frontend",
+        "company_name": "Keychain L.T.D",
+        "position": "Modo Remoto",
+        "time": "2 años 7 meses",
+        "description": "Implementar, desarrollar, probar y refactorizar funcionalidades para una extensión de chrome y una app móvil, utilizando herramientas modernas como Reactjs, Typescript, Jest, C.I, Webpack, Bootstrap, React native, Android studio, JAVA, etc. Hotfixes y debugging de código fueron tareas del día a día. Ambas aplicaciones siendo utilizadas por +10.000 usuarios.",
+        "acomplishment_1": "Implementar más de 12 nuevas funcionalidades en la extensión y app móvil",
+        "acomplishment_2": "Desarrollar la plataforma de pruebas CI desde cero, para una gran base de código",
+        "acomplishment_3": "Entregar código limpio y reutilizable bajo estándares de control muy estrictos"
+      },
+      "hive_engine": {
+        "title": "Desarrollador Frontend & Líder de Proyecto",
+        "company_name": "Hive Engine",
+        "position": "Modo Remoto",
+        "time": "5 meses",
+        "description": "Planificar, diseñar y entregar una plataforma completa, basada en web3. Codificando el backend y el frontend. El verdadero desafío fue realizar este proyecto en un corto período de tiempo, además de eso, aprender sobre esta red e implementar las mejores prácticas para entregar un buen producto.",
+        "acomplishment_1": "Manejar con éxito la autenticación del backend, la CDN de contenido y la creación de tokens NFT",
+        "acomplishment_2": "Desarrollar el frontend utilizando GatsbyJs, React y UI/UX modernos",
+        "acomplishment_3": "Implementar y liderar este proyecto en 5 meses"
+      },
+      "freelance": {
+        "title": "Desarrollador Frontend",
+        "company_name": "Autónomo",
+        "position": "Híbrido",
+        "time": "2 años",
+        "description": "Planificar, diseñar y entregar sitios web y aplicaciones de software. Mediante el desarrollo web, específicamente con React, pude integrar marcos de trabajo modernos e infraestructuras de IT para el desarrollo de software. Además, utilizando herramientas como Visual Basic, pude crear software según las necesidades del cliente.",
+        "acomplishment_1": "Manejar una base de clientes de gran tamaño",
+        "acomplishment_2": "Desarrollar sistemas de software modernos utilizando Visual Basic & React",
+        "acomplishment_3": "Implementar, liderar y entender las necesidades del cliente"
+      },
+      "ena": {
+        "title": "Asistente Personal",
+        "company_name": "ENA L.T.D",
+        "position": "Oficinas/Hogares",
+        "time": "1 año y 5 meses",
+        "description": "Brindar asistencia, cuidado y atención domiciliaria profesional a muchos clientes en todo el Reino Unido. Mi principal desafío fue adaptarme a las necesidades y la atención de los clientes. Fue una oportunidad increíble para cuidar de personas con discapacidades, aprender sobre la cultura y el idioma británicos. Incluso cuando no era mi carrera principal, fue una oportunidad única para crecer como ser humano.",
+        "acomplishment_1": "Brindar atención humana y satisfacer con éxito las necesidades de los clientes",
+        "acomplishment_2": "Brindar asistencia profesional a los clientes, haciéndoles la vida más fácil y más feliz",
+        "acomplishment_3": "Desarrollar relaciones cercanas con personas con discapacidades mientras convivía con ellas en un período de tiempo de 3 - 5 meses"
+      },
+      "eccel": {
+        "title": "Ingeniero Electrónico",
+        "company_name": "Corporación ECCEL",
+        "position": "En Oficina",
+        "time": "1 año",
+        "description": "Mantener, desarrollar y mejorar un sistema de diseño de dispositivos GPRS. En este trabajo tuve que implementar ambas partes: hardware y software. El aspecto interesante de este trabajo fue poder trabajar con grandes Ingenieros y ayudar a mejorar la línea de producción existente.",
+        "acomplishment_1": "Mejorar los procedimientos para construir los equipos/dispositivos",
+        "acomplishment_2": "Diseñar con éxito una mejor manera de rastrear equipos y mejorar las tarifas de facturación",
+        "acomplishment_3": "Mejorar las metodologías de seguimiento/tickets de soporte para su mayor cliente: CODENSA"
+      },
+      "blockven": {
+        "title": "Asesor de TI/Desarrollo de software",
+        "company_name": "Blockven C.A",
+        "position": "Híbrido",
+        "time": "2 años",
+        "description": "Brindar servicios de reparación de computadores, asesoramiento profesional y reparación de equipos electrónicos a más de 100 clientes al año. Aquí pude ejecutar, aprender y profundizar en mi título de Ingeniería, específicamente en la parte técnica. Fue una gran oportunidad para trabajar con diferentes clientes, brindar soporte de redes, incluido el desarrollo de software.",
+        "acomplishment_1": "Mejorar las redes de computadoras para más de 100 clientes y su seguridad",
+        "acomplishment_2": "Brindar soporte profesional en TI, redes y electrónica",
+        "acomplishment_3": "Desarrollar relaciones cercanas e interactuar con clientes de diferentes nichos"
+      }
+    },
+    "project": {
+      "rocco_website": {
+        "title": "Sitio web profesional/artístico",
+        "company_name": "Autónomo",
+        "description": "La persona quería que creara un sitio web para mostrar ambos aspectos: logros artísticos y de aprendizaje. Todo esto utilizando el modo SPA(aplicación de una página). Decidí usar React para construir este sitio de acuerdo con las necesidades y preferencias del cliente"
+      },
+      "old_portfolio_website": {
+        "title": "Portafolio",
+        "company_name": "Autónomo",
+        "description": "Para este sitio web decidí hacer una mezcla entre ambos temas: desarrollo y música. La capacidad de respuesta de diseño, sin importar el dispositivo y también fue clave un enfoque móvil. Un aspecto importante a mencionar fue agregar una opción para comprar álbumes de CD de música para la página, lo que hice usando la API de PayPal"
+      },
+      "jobaboard_website": {
+        "title": "Plataforma Web3 'Jobaboard'",
+        "company_name": "Autónomo",
+        "description": "Esta idea surgió cuando estaba terminando mi primera actualización de conocimientos sobre React y JS. Fue un contratista estadounidense quien me contrató para esto. El proyecto fue un desafío porque tuve que codificar el backend y el frontend, también estaban involucrados web3 y blockchain. La idea de la plataforma era 'tener una plataforma como freelancer pero usando NFTs en lugar de FIAT'. Tuve que trabajar alrededor de 12 a 14 horas durante aproximadamente 5 meses para construir este sitio desde cero"
+      },
+      "nansystems_website": {
+        "title": "Sitio Web Mixto",
+        "company_name": "Autónomo",
+        "description": "Esta clienta con sede en EE. UU. quería un sitio web para mostrar su perfil profesional, pero también para cotizar consultas comerciales. El cliente también quería la opción de editar la mayoría del contenido y poder tener un blog. Terminé usando graphql y un 'CMS sin cabeza' llamado contentful por su flexibilidad para lograr la edición del contenido en tiempo real"
+      },
+      "landing_website": {
+        "title": "Página de Aterrizaje",
+        "company_name": "Autónomo",
+        "description": "Basado en una página de destino, modo SPA, el objetivo principal era la capacidad de respuesta sin importar el dispositivo, y un diseño atractivo. Lo construí utilizando ReactJS y principios básicos de diseño gráfico, para mostrar un buen equilibrio entre funcionalidad y energía"
+      },
+      "keychain_ci": {
+        "title": "Entornos de Pruebas CI/CD",
+        "company_name": "Keychain L.T.D",
+        "description": "Esta fue mi primera tarea al trabajar con esta empresa. Tenían una enorme base de código: una extensión de Chrome que funciona como una billetera web3 y lo mismo pero para móviles(Android e IOS). Justo después de aprender los conceptos básicos de JEST, RTL y Typescript, codifiqué un CI/CD completo, pruebas E2E, pruebas de módulos y finalmente obtuve con orgullo una cobertura del 97,6%. También debo confesar que fue una gran oportunidad el trabajar con pruebas y profundizar en el manejo de una base de código muy compleja"
+      },
+      "keychain_store": {
+        "title": "Tienda Keychain",
+        "company_name": "Keychain L.T.D",
+        "description": "Esta red web3, llamada HIVE, tiene muchos usuarios y transfieren divisas con frecuencia. Muchos de ellos la utilizan como sistema de pago para vender o comprar productos en línea. Los usuarios querían una forma de generar una solicitud de transacción única para gestionar sus pagos, desde una aplicación móvil. Hice esto usando React Native y web3"
+      },
+      "keychain_playground_website": {
+        "title": "Keychain Playground",
+        "company_name": "Keychain L.T.D",
+        "description": "Después de trabajar en el SDK de Keychain, la idea era tener un sitio web para jugar/probar con todos los comandos y opciones del SDK de una manera segura. Usando React, TS, web3 y bootstrap, pude codificar este sitio. Así los usuarios pueden ver los comandos, leer muestras en vivo y analizar el código antes de ejecutar una operación"
+      },
+      "keychain_widget_website": {
+        "title": "Widget Incorporable",
+        "company_name": "Keychain L.T.D",
+        "description": "Esta empresa estableció una forma de intercambiar tokens. Lo llamaron función de intercambio 'Swap'. La idea principal de tener un widget era permitir a los usuarios incorporar esta función en cualquier sitio web o aplicación web. Con herramientas como: React, webpack, TS, etc., pude codificar un 'iframe inteligente' que funciona como una 'minicopia de su extensión de Chrome' y permite intercambiar tokens en cada aplicación web que necesiten, contando con un sistema de socios y comisiones por uso."
+      },
+      "keychain_sdk": {
+        "title": "Kit de Desarrollo",
+        "company_name": "Keychain L.T.D",
+        "description": "SDK significa Kit de desarrollo de software. Es una base de código que permite a los desarrolladores ahorrar tiempo y trabajo al tener una biblioteca en línea que los ayuda a ejecutar/depurar comandos o incluso solicitar datos o información. Hice esto usando Typescript puro, entre otras herramientas, y aprovechando la extensión de Chrome que hicieron."
+      },
+      "keychain_tutorial_website": {
+        "title": "Tutorial de Keychain",
+        "company_name": "Keychain L.T.D",
+        "description": "Usando herramientas como: React, TS, JS e i18n, pude crear este sitio web tutorial para enseñar a los nuevos usuarios sobre las características que ofrece esta empresa web3. Vale la pena mencionar que el sitio tiene detección automática de idioma y detección de dispositivo solo para fines de renderizado y rendimiento"
+      },
+      "keychain_mobile_widgets": {
+        "title": "Androide Widgets",
+        "company_name": "Keychain L.T.D",
+        "description": "Esto fue un desafío ya que era una función que ni siquiera el equipo había hecho antes. La idea era tener widgets para Android. Hice esto profundizando en JAVA y Android Estudio. Como ya sabrás, React Native te permite usar módulos personalizados para comunicarte con el código nativo, pero ciertas limitaciones te obligan a ir a código JAVA. Esta tarea también me permitió aprender sobre encontrar formas de crear gráficos 'a mano' y manejar actualizaciones de datos entre el lado de JAVA y el lado de React Native. Terminé creando 2 widgets para esta aplicación móvil"
+      },
+      "keychain_mobile_newui": {
+        "title": "Rediseño UI/UX",
+        "company_name": "Keychain L.T.D",
+        "description": "Esta empresa decidió actualizar el diseño de toda su aplicación móvil. Para lograrlo, tuve que profundizar en Figma y realizar muchos cambios en la interfaz de usuario y en la experiencia de usuario de la aplicación. También vale la pena mencionar que tuve que configurar más de 3 emuladores y usar dispositivos Android reales para garantizar el renderizado adecuado sin importar qué dispositivo estuviera usando la aplicación"
+      },
+      "keychain_extension_portfolio": {
+        "title": "Portafolio de Activos",
+        "company_name": "Keychain L.T.D",
+        "description": "Esta red, como muchas otras web3, tiene sus propios tokens. Esos tokens se pueden poner a 'plazo fijo', intercambiar o delegar. Esta empresa quería que codificara un portafolio de activos que pudiera resumir información imporante de tokens y monedas de cada cuenta que se encuentre en la billetera(extensión de Chrome)"
+      },
+      "first_cv_portfolio": {
+        "title": "Primer portafolio/CV",
+        "company_name": "Actualización de conocimientos 2019",
+        "description": "Como parte de mi proceso de actualización de conocimientos en 2019, tuve que documentar cada paso realizado al llevar a cabo dos cursos importantes: Odin Project y Freecodecamp. De esta manera, pude codificar y practicar con proyectos de la vida real durante mi actualización"
+      }
+    },
+    "about": {
+      "nature": {
+        "title": "Natural",
+        "p_1": "Me gusta mucho hacer viajes y exploraciones a la naturaleza, aquí recargo mis energías.",
+        "p_2": "Soy un desarrollador web experimentado. Tengo 43 años, soy venezolano e italiano. Me considero una persona confiable, espiritual y dedicada a las cosas que amo."
+      },
+      "love": {
+        "title": "Amor",
+        "p_1": "Mi esposa es uno de los tesoros más importantes que tengo.",
+        "p_2": "Me encanta ayudar y servir. Por eso, hacer sitios web, corregir código, crear funciones e implementar nuevas características, son cosas que definitivamente amo."
+      },
+      "family": {
+        "title": "Familia",
+        "p_1": "Creo que la familia es el pilar de nuestras vidas.",
+        "p_2": "Más que un ingeniero soy una persona que busca encontrar lo extraordinario en el día a día."
+      },
+      "me": {
+        "title": "Yo",
+        "p_1": "He venido de otra galaxia para trabajar contigo. Será un verdadero placer ayudarte a hacer realidad tus ideas.",
+        "p_2": "Soy un 'tipo normal' que intenta siempre marcar la diferencia!"
+      }
+    },
+    "faq": {
+      "top": {
+        "title": {
+          "part_1": "Responderemos tus preguntas.",
+          "part_2": "¡Haré lo mejor que pueda!"
+        }
+      },
+      "1": {
+        "q": "¿Qué tipo de páginas web puedes crear?",
+        "a": "Puedo diseñar y codificar: SPA, sitios estáticos, sitios dinámicos, sitios enfocados en dispositivos móviles y sitios responsivos que se pueden usar en cualquier tipo de dispositivo. Además de eso, puedo profundizar en electrónica e IoT"
+      },
+      "2": {
+        "q": "¿Puedes encargarte del backend, extensiones de Chrome y APIs?",
+        "a": "Como ingeniero de software, tengo una sólida experiencia en la búsqueda de soluciones. Soy capaz de codificar: backend, extensiones, API y virtualmente cualquier cosa relacionada al desarrollow web, según la demanda"
+      },
+      "3": {
+        "q": "¿Qué herramientas utilizas para desarrollar páginas web?",
+        "a": "Normalmente utilizo ReactJS, Typescript y CSS, pero puedo adaptarme a una amplia gama de herramientas como: Webflow, Relume, Firgma, Material UI, Bootstrap, Penpot o herramientas de diseño o codificación con IA. Básicamente puedo adaptarme fácilmente a las necesidades de la empresa o del cliente."
+      },
+      "4": {
+        "q": "¿También puedes encargarte del desarrollo móvil?",
+        "a": "Sí, puedo codificar una aplicación móvil usando React Native para dispositivos Android. También puedo adaptarme si necesito usar Android Studio"
+      },
+      "5": {
+        "q": "¿Cuál es tu experiencia con ReactJS y Typescript?",
+        "a": "Mi experiencia se basa en codificar componentes, API, SDK y todo lo que podamos necesitar, creado desde cero. Cuando los proyectos requieren más seguridad, codifico todo desde cero. Si el proyecto no requiere tanta seguridad, entonces puedo encontrar en npm, lo que necesito. Incluso cuando busco componentes en Internet, siempre observo las dependencias, las actualizaciones y el mantenimiento del código, garantizando así el uso de paquetes confiables"
+      },
+      "6": {
+        "q": "¿Trabajas con sistemas de gestión de contenido sin interfaz gráfica (CMS headless)?",
+        "a": "Sí lo hago. A veces, un proyecto puede requerir que no codifiques todo un CMS tú mismo, sino que los clientes puedan editar, actualizar o agregar contenido a un sitio web dinámico o incluso estático. Es allí donde entran los 'Sistema de Gestión de Contenidos sin cabeza', como una herramienta de diseño y edición de datos"
+      },
+      "7": {
+        "q": "¿Qué tipo de bases de datos puedes integrar en páginas web?",
+        "a": "Puedo integrar soluciones robustas como Mongo o SQL. También puedo trabajar con soluciones más prácticas y livianas como mariaDB, mySQL, etc."
+      },
+      "8": {
+        "q": "¿Qué experiencia tienes con la tecnología blockchain?",
+        "a": "Hasta ahora (2024) tengo alrededor de 3 años trabajando con web3 y blockchain. He utilizado web3js, jsonRPC y APIs específicas para diferentes redes blockchain. Visita mi página de proyectos, para que puedas encontrar 'Jobaboard y Keychain' y conocer más sobre mi experiencia con web3"
+      },
+      "9": {
+        "q": "¿Cómo es tu enfoque de trabajo en función de las necesidades del cliente?",
+        "a": "Tenemos una primera conversación sobre la idea. Dependiendo de lo compleja que sea, puedo sugerir un camino o fijar una fecha para poder investigar y presentar un primer vistazo sobre los 'cómo y porqués'. Después de esta etapa, puedo tomarme un tiempo para hacer una propuesta de diseño inicial, en base a los datos e información del cliente. Prefiero presentar un solo diseño pero tener diferentes opciones sobre el mismo, en base a tipografía, estructura y colores"
+      },
+      "10": {
+        "q": "¿Trabajas a tiempo completo o por contrato?",
+        "a": "Estoy abierto a trabajar por contrato o a tiempo completo. Lo más importante para mí es hacer el proyecto y ayudar a que las ideas del cliente/empresa se conviertan en realidad, sean sostenibles, mantenibles y utilicen el código más limpio posible"
+      },
+      "11": {
+        "q": "¿Cómo manejas el trabajo remoto?",
+        "a": "Tengo un historial comprobado que puedes consultar en mi cuenta de github de los últimos 4 años. Organizo mi tiempo y trabajo diariamente sin interrupciones. Mi enfoque es completar las tareas y siempre prestar atención a los detalles"
+      }
+    }
+  },
+  "contact": {
+    "title_1": "Ing. Saturno Mangieri",
+    "title_2": "Desarrollador Frontend",
+    "disclaimer": "Trabajo remoto pero estoy abierto a trabajar en un entorno híbrido. Mis ubicaciones habituales son: Venezuela, Argentina y España. Por favor, consulta algunas de mis redes sociales o contáctame para más información",
+    "visit_faq": "Si aún tienes dudas, ve a preguntas frecuentes",
+    "submit_button_title": "Para evitar spam se mostrará un captcha para continuar"
+  },
+  "captcha": {
+    "disclaimer": "Lamento las molestias, pero necesito confirmar que eres un ser humano y no abusas de los emails. Por favor, resuelve el rompecabezas para finalizar la acción.",
+    "next_action": "Después de verificar, {{action}} ¡Gracias!",
+    "action": {
+      "will_send_message": "se enviará su mensaje!"
+    }
+  },
+  "error": {
+    "mail": "¡Ups! Espere un mail de respuesta por favor, ha alcanzado la cantidad máxima de correos electrónicos permitidos.",
+    "alternative_solution": "Intente enviarme un mensaje directamente a saturnob612@gmail.com",
+    "page": {
+      "header_1": "Parece que la ruta/recurso solicitado no existe.",
+      "subheader_1": "Disculpe las molestias, pero una posible solución podría ser:",
+      "point_1": "Verifique nuevamente la URL que intentó seguir.",
+      "point_2": "Comuníquese con el administrador si un enlace está roto."
+    }
   }
 }

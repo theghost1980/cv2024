@@ -51,6 +51,7 @@ export enum IconPathName {
   DOWNLOAD = "common/download",
   EXPAND = "common/expand",
   TRANSLATE = "common/translate",
+  UFO = "common/ufo-spaceship",
 }
 
 export enum LogoPathName {

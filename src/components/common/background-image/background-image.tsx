@@ -32,6 +32,7 @@ export enum BgImageFileName {
   KEYCHAIN_EXTENSION_PORTFOLIO = "/cards/keychain-extension-portfolio.png",
   FIRST_CV_PORTFOLIO = "/cards/first-cv-portfolio.png",
   TECH_SUPPORT = "tech_support.png",
+  ERROR = "error-page.jpg",
 }
 
 interface Props {

@@ -45,8 +45,8 @@ const GetInTouch = () => {
   const [form, setForm] = useState<ContactForm>(DEFAULT_CONTACT_FORM);
   const [errorMessage, setErrorMessage] = useState({
     triggered: false,
-    error: t("error.mail"),
-    solution: t("error.alternative_solution"),
+    error: "error.mail",
+    solution: "error.alternative_solution",
   });
 
   const navigate = useNavigate();
@@ -68,6 +68,7 @@ const GetInTouch = () => {
         console.log(t("error.mail"));
         handleErrorMessage(true);
         setTimeout(() => {
+          clearFormData();
           handleErrorMessage(false);
         }, 8000);
       } else {
@@ -186,10 +187,10 @@ const GetInTouch = () => {
             {errorMessage.triggered && (
               <div className="div-col-around send-loader">
                 <h4 className="header-title-small text-centered side-margin-max">
-                  {errorMessage.error}
+                  {t(errorMessage.error)}
                 </h4>
                 <h3 className="header-title-small text-centered side-margin-max">
-                  {errorMessage.solution}
+                  {t(errorMessage.solution)}
                 </h3>
                 <Button
                   title={"ok"}
@@ -268,7 +269,7 @@ const GetInTouch = () => {
       {loadCaptcha && (
         <Captcha
           next_action_title={t("captcha.next_action", {
-            action: "will Submit your kind message!",
+            action: t("captcha.action.will_send_message"),
           })}
           width={300}
           height={180}

@@ -8,7 +8,6 @@ export const RootLayout = () => {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    //check prev lang
     initLangCheck();
   }, []);
 

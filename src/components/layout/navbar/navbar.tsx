@@ -39,7 +39,7 @@ export const Navbar = ({
       title: string;
       to: string;
     };
-    ctaButton: CTAButtonData;
+    ctaButton?: CTAButtonData;
   }>();
 
   const { t } = useTranslation();
@@ -62,10 +62,11 @@ export const Navbar = ({
           title: "common.projects",
           to: "/projects",
         },
-        ctaButton: {
-          title: "my_design_process",
-          to: "/zero-to-hero",
-        },
+        //TODO not created for now, uncomment + code in future if needed.
+        // ctaButton: {
+        //   title: "my_design_process",
+        //   to: "/zero-to-hero",
+        // },
       });
     } else if (location && location.pathname.includes("work")) {
       setClassByRoute("desktop-view");
@@ -90,8 +91,11 @@ export const Navbar = ({
         location.pathname.includes("faq"))
     ) {
       setClassByRoute("desktop-view");
+      const keyTitle = location.pathname.includes("faq")
+        ? "navigation.page_title.faq"
+        : "navigation.page_title.projects";
       setDesktopMenuProps({
-        pageTitle: "navigation.page_title.projects",
+        pageTitle: keyTitle,
         linkOne: {
           title: "common.work",
           to: "/work-experience",
@@ -172,15 +176,16 @@ export const Navbar = ({
               >
                 {t(desktopMenuProps.linkTwo.title)}
               </div>
-              <Button
-                title={desktopMenuProps.ctaButton.title}
-                buttonStyleType={"secondary"}
-                onClick={() => {
-                  handleActionOrNavigate(desktopMenuProps.ctaButton);
-                }}
-                //TODO decide if making it same as about...
-                additionalClassname="button-my-design"
-              />
+              {desktopMenuProps.ctaButton && (
+                <Button
+                  title={desktopMenuProps.ctaButton.title}
+                  buttonStyleType={"secondary"}
+                  onClick={() => {
+                    handleActionOrNavigate(desktopMenuProps.ctaButton);
+                  }}
+                  additionalClassname="button-my-design"
+                />
+              )}
               <Icon
                 iconPathName={IconPathName.HAMBURGUER_MENU}
                 width={40}

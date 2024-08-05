@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./app.css";
 import { About } from "./components/about/about";
+import ErrorPage from "./components/error/error-page";
 import Faq from "./components/faq/faq";
 import GetInTouch from "./components/get-in-touch/get-in-touch";
 import { Home } from "./components/home/home";
@@ -15,15 +16,11 @@ import "./i18n/config";
 //    - test in mobile & desktop & home TV
 //  - make a new CV based on same website design(content, design) and add download option.
 
-/* //TODO remove image from files */
-/* background-image: url("/src/assets/images/bg/bg-img.png"); */
-
-//TODO bellow define enum for routes.
-//TODO error page
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,

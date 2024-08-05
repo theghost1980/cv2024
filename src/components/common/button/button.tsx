@@ -18,7 +18,7 @@ export const Button = ({
   const { t } = useTranslation();
   return (
     <button
-      title={title}
+      title={t(`button.${title}`)}
       onClick={onClick}
       className={`button ${buttonStyleType} ${additionalClassname}`}
     >

@@ -14,7 +14,6 @@ import "./i18n/config";
 //TODO important after finishing the website:
 // - TODO IMPORTANT make a match between CV and Linkedin profile ASAP before making it live.
 //  - upload using netlify use same name as the one: https://saturnomangieri.netlify.app/
-//  - make a new CV based on same website design(content, design) and add download option.
 
 const router = createBrowserRouter([
   {

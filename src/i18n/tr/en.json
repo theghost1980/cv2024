@@ -32,7 +32,7 @@
   "common": {
     "work": "Work",
     "projects": "Projects",
-    "what_was_acommplished": "What was acomplished?",
+    "what_was_acommplished": "What was accomplished?",
     "at": "at",
     "click_to_enlarge": "Click for full view!",
     "click_to_close": "Click to close!",
@@ -85,16 +85,16 @@
         "position": "Fully In-place",
         "time": "1 year 5 months",
         "description": "Provide assistance, nursery and professional home care to many clients all across United Kingdom. My main challenge was adapting myself to client's needs and care. It was an amazing opportunity to take care of people in need, learn about British Culture and language. Even when it wasn't my main career it was a life time opportunity to grow as a human being.",
-        "acomplishment_1": "Deliver human care and successfully fulfill client's necesities",
+        "acomplishment_1": "Deliver human care and successfully fulfill client's necessities",
         "acomplishment_2": "Provide professional assistance to at least 5 clients, making their lives easier and happier",
-        "acomplishment_3": "Develop close relationships with people with dissabilities while living with them in a 3 months period of time"
+        "acomplishment_3": "Develop close relationships with people with disabilities while living with them in a 3 months period of time"
       },
       "eccel": {
         "title": "Electronic Engineer",
         "company_name": "Eccel Corporation",
         "position": "Fully In-Office",
         "time": "1 year",
-        "description": "Maintain, develop and improve a design system of GPRS devices. In this job I had to implement both parts: hardware and software. The interesting aspect fo this job was being able to work among other great Engineers and help to improve the production line in place.",
+        "description": "Maintain, develop and improve a design system of GPRS devices. In this job I had to implement both parts: hardware and software. The interesting aspect of this job was being able to work among other great Engineers and help to improve the production line in place.",
         "acomplishment_1": "Improve procedures to build the equipments/devices",
         "acomplishment_2": "Successfully design a better way to track equipment and improve billing rates",
         "acomplishment_3": "Improve the tracking/support tickets systems for their biggest client: CODENSA"

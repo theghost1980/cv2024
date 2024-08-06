@@ -81,6 +81,7 @@ const GetInTouch = () => {
   useEffect(() => {
     if (captchaResult === "success") {
       setLoading(true);
+      console.log({ v: process.env.emailJS }); //TODO remove after fix
       emailjs
         .sendForm(
           "miscontactosdecelular",

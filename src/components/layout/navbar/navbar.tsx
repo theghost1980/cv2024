@@ -48,9 +48,6 @@ export const Navbar = ({
   let location = useLocation();
 
   useEffect(() => {
-    console.log(location);
-    //TODO bellow add a reference data folder + file to bring selected route page data
-    // TODO and fix these logic, refactor
     if (location && location.pathname.includes("about")) {
       setClassByRoute("desktop-view");
       setDesktopMenuProps({

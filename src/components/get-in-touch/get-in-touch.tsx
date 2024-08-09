@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser";
 import React, { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Form, useNavigate } from "react-router-dom";
+import { RouteEnum } from "../../enums/routes.enum";
 import { checkMail } from "../../utils/mail";
 import {
   BackgroundImage,
@@ -268,7 +269,7 @@ const GetInTouch = () => {
             )}
             <h3
               className="header-title-small visit-faq"
-              onClick={() => navigate("/faq")}
+              onClick={() => navigate(`/${RouteEnum.FAQ}`)}
             >
               {t("contact.visit_faq")}
             </h3>

@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
+import { RouteEnum } from "../../enums/routes.enum";
 import {
   BackgroundImage,
   BgImageFileName,
@@ -32,12 +33,12 @@ export const Home = () => {
           <Button
             title="about_me"
             buttonStyleType="primary"
-            onClick={() => navigate("/about")}
+            onClick={() => navigate(RouteEnum.ABOUT)}
           />
           <Button
             title="contact_me"
             buttonStyleType="agressive"
-            onClick={() => navigate("/get-in-touch")}
+            onClick={() => navigate(RouteEnum.CONTACT)}
           />
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
+import { RouteEnum } from "../../../enums/routes.enum";
 import {
   BackgroundImage,
   BgImageFileName,
@@ -26,7 +27,7 @@ export const Navbar = ({
   classname = "floating",
   handleSwitchTranslation,
 }: Props) => {
-  const { i18n } = useTranslation();
+  const [hideMenu, setHideMenu] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [classByRoute, setClassByRoute] = useState<string>("");
   const [showDownloadCvOverlay, setShowDownloadCvOverlay] = useState(false);
@@ -48,40 +49,51 @@ export const Navbar = ({
   let location = useLocation();
 
   useEffect(() => {
-    if (location && location.pathname.includes("about")) {
+    if (
+      location &&
+      location.pathname &&
+      location.pathname !== "/" &&
+      !Object.values(RouteEnum).find(
+        (r) => location.pathname.split("/")[1] === r
+      )
+    ) {
+      setHideMenu(true);
+      return;
+    }
+    if (location && location.pathname.includes(RouteEnum.ABOUT)) {
       setClassByRoute("desktop-view");
       setDesktopMenuProps({
         pageTitle: "navigation.page_title.about_me",
         linkOne: {
           title: "common.work",
-          to: "/work-experience",
+          to: RouteEnum.WORK,
         },
         linkTwo: {
           title: "common.projects",
-          to: "/projects",
+          to: RouteEnum.PROJECT,
         },
       });
-    } else if (location && location.pathname.includes("work")) {
+    } else if (location && location.pathname.includes(RouteEnum.WORK)) {
       setClassByRoute("desktop-view");
       setDesktopMenuProps({
         pageTitle: "navigation.page_title.work_experience",
         linkOne: {
           title: "common.projects",
-          to: "/projects",
+          to: RouteEnum.PROJECT,
         },
         linkTwo: {
           title: "button.about_me",
-          to: "/about",
+          to: RouteEnum.ABOUT,
         },
         ctaButton: {
           title: "contact_me",
-          to: "/get-in-touch",
+          to: RouteEnum.CONTACT,
         },
       });
     } else if (
       location &&
-      (location.pathname.includes("projects") ||
-        location.pathname.includes("faq"))
+      (location.pathname.includes(RouteEnum.PROJECT) ||
+        location.pathname.includes(RouteEnum.FAQ))
     ) {
       setClassByRoute("desktop-view");
       const keyTitle = location.pathname.includes("faq")
@@ -91,28 +103,28 @@ export const Navbar = ({
         pageTitle: keyTitle,
         linkOne: {
           title: "common.work",
-          to: "/work-experience",
+          to: RouteEnum.WORK,
         },
         linkTwo: {
           title: "button.about_me",
-          to: "/about",
+          to: RouteEnum.ABOUT,
         },
         ctaButton: {
           title: "contact_me",
-          to: "/get-in-touch",
+          to: RouteEnum.CONTACT,
         },
       });
-    } else if (location && location.pathname.includes("get-in-touch")) {
+    } else if (location && location.pathname.includes(RouteEnum.CONTACT)) {
       setClassByRoute("desktop-view");
       setDesktopMenuProps({
         pageTitle: "navigation.page_title.get_in_touch",
         linkOne: {
           title: "common.work",
-          to: "/work-experience",
+          to: RouteEnum.WORK,
         },
         linkTwo: {
           title: "common.projects",
-          to: "/projects",
+          to: RouteEnum.PROJECT,
         },
         ctaButton: {
           title: "download_cv",
@@ -120,6 +132,7 @@ export const Navbar = ({
         },
       });
     }
+    setHideMenu(false);
   }, [location]);
 
   const showDowloadCvSection = () => {
@@ -140,7 +153,7 @@ export const Navbar = ({
     if (ctaButton.to) handleNavigate(ctaButton.to);
   };
 
-  return (
+  return !hideMenu ? (
     <nav
       className={`${classname} ${
         isOpen ? "full-height" : "adjust-top"
@@ -260,7 +273,7 @@ export const Navbar = ({
           <li>
             <Button
               title="about_me"
-              onClick={() => handleNavigate("/about")}
+              onClick={() => handleNavigate(RouteEnum.ABOUT)}
               buttonStyleType={"secondary"}
               additionalClassname="button-menu"
             />
@@ -268,7 +281,7 @@ export const Navbar = ({
           <li>
             <Button
               title="work_experience"
-              onClick={() => handleNavigate("/work-experience")}
+              onClick={() => handleNavigate(RouteEnum.WORK)}
               buttonStyleType={"secondary"}
               additionalClassname="button-menu"
             />
@@ -276,7 +289,7 @@ export const Navbar = ({
           <li>
             <Button
               title="projects"
-              onClick={() => handleNavigate("/projects")}
+              onClick={() => handleNavigate(RouteEnum.PROJECT)}
               buttonStyleType={"secondary"}
               additionalClassname="button-menu"
             />
@@ -284,7 +297,7 @@ export const Navbar = ({
           <li>
             <Button
               title="contact_me"
-              onClick={() => handleNavigate("/get-in-touch")}
+              onClick={() => handleNavigate(RouteEnum.CONTACT)}
               buttonStyleType={"secondary"}
               additionalClassname="button-menu"
             />
@@ -292,7 +305,7 @@ export const Navbar = ({
           <li>
             <Button
               title="faq"
-              onClick={() => handleNavigate("/faq")}
+              onClick={() => handleNavigate(RouteEnum.FAQ)}
               buttonStyleType={"secondary"}
               additionalClassname="button-menu"
             />
@@ -301,5 +314,5 @@ export const Navbar = ({
       </div>
       {/* end menu opened */}
     </nav>
-  );
+  ) : null;
 };

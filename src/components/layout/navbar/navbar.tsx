@@ -49,6 +49,11 @@ export const Navbar = ({
   let location = useLocation();
 
   useEffect(() => {
+    if (location && location.pathname === RouteEnum.HOME) {
+      setIsOpen(false);
+      setClassByRoute("");
+      return;
+    }
     if (
       location &&
       location.pathname &&

@@ -38,6 +38,8 @@
 
   /* blur value */
   --blur-minimum: 2.5px;
+
+  background-color: rgba(220, 220, 220, 0.8);
 }
 
 /* Global Scroll bar */

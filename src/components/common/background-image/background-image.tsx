@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BgOverlay from "../overlay/bg-overlay";
 import "./background-image.css";
 
@@ -46,19 +46,35 @@ interface Props {
   };
 }
 
+const BG_PATH_PREFIX = "./assets/images/bg/";
+
 export const BackgroundImage = ({
   bgImageFileName,
   additionalClassname,
   overlayColor,
 }: Props) => {
-  return (
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = `${BG_PATH_PREFIX}${bgImageFileName}`;
+    image.onload = () => {
+      setImageLoaded(true);
+    };
+  }, []);
+
+  return imageLoaded ? (
     <div
-      className={`bg-image-container ${additionalClassname}`}
+      className={`bg-image-container ${additionalClassname} ${
+        imageLoaded ? "loaded" : ""
+      }`}
       style={{
-        backgroundImage: `url(./assets/images/bg/${bgImageFileName})`,
+        backgroundImage: `url(${BG_PATH_PREFIX}${bgImageFileName})`,
       }}
     >
       {overlayColor && <BgOverlay overlayColor={overlayColor} />}
     </div>
+  ) : (
+    <div className="bg-image-skeleton"></div>
   );
 };

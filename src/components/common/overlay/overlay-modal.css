@@ -1,6 +1,6 @@
 .overlay-container {
   width: 45%;
-  height: 40%;
+  height: 60%;
   background-color: var(--ceruleo-medium);
   border-radius: 12px;
   padding: 18px;
@@ -24,5 +24,12 @@
     height: 80px;
     border-radius: 8px;
     cursor: pointer;
+  }
+}
+@media screen and (width < 762px) {
+  .overlay-container {
+    width: 80% !important;
+    height: 70% !important;
+    overflow: auto;
   }
 }

@@ -1,0 +1,28 @@
+.overlay-container {
+  width: 45%;
+  height: 40%;
+  background-color: var(--ceruleo-medium);
+  border-radius: 12px;
+  padding: 18px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  .content-list {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-img {
+    margin-bottom: 8px;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}

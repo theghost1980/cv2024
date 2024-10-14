@@ -52,6 +52,7 @@ export enum IconPathName {
   EXPAND = "common/expand",
   TRANSLATE = "common/translate",
   UFO = "common/ufo-spaceship",
+  GIFT = "common/gift",
 }
 
 export enum LogoPathName {
@@ -66,6 +67,7 @@ interface Props {
   color: string;
   onClick?: () => void;
   additionalClassName?: string;
+  title?: string;
 }
 
 export const Icon = ({
@@ -75,6 +77,7 @@ export const Icon = ({
   onClick,
   iconPathName,
   additionalClassName,
+  title,
 }: Props) => {
   const addedStyles = `width: ${width}px; height: ${height}px; color:${color}; ${
     onClick ? "cursor:pointer;" : ""
@@ -91,6 +94,7 @@ export const Icon = ({
       }}
       onClick={onClick}
       className={additionalClassName}
+      title={title}
     />
   );
 };

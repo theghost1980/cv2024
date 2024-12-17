@@ -9,6 +9,9 @@ interface Props {
   onBackClick?: () => void;
 }
 
+const DRIVELINK =
+  "https://drive.google.com/drive/folders/1m3BRb-ad3LHhEa2dhfxfAVMvTVpzQ42q?usp=drive_link";
+
 const OverlayModal = ({ onBackClick }: Props) => {
   const handlePropagation = (e: any) => {
     e.stopPropagation();
@@ -38,9 +41,7 @@ const OverlayModal = ({ onBackClick }: Props) => {
                 width={28}
                 height={28}
                 color="white"
-                onClick={() =>
-                  window.open("https://rapidshare.io/2CJj/Bhajananda-Album.zip")
-                }
+                onClick={() => window.open(DRIVELINK)}
                 title="Go to download page"
               />
             </div>
@@ -56,11 +57,7 @@ const OverlayModal = ({ onBackClick }: Props) => {
                 width={28}
                 height={28}
                 color="white"
-                onClick={() =>
-                  window.open(
-                    "https://rapidshare.io/2CJl/Digital-Album-Inspiration.zip"
-                  )
-                }
+                onClick={() => window.open(DRIVELINK)}
                 title="Go to download page"
               />
             </div>
@@ -76,9 +73,7 @@ const OverlayModal = ({ onBackClick }: Props) => {
                 width={28}
                 height={28}
                 color="white"
-                onClick={() =>
-                  window.open("https://rapidshare.io/2CJk/Parapeto-Album.zip")
-                }
+                onClick={() => window.open(DRIVELINK)}
                 title="Go to download page"
               />
             </div>

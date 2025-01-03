@@ -8,13 +8,6 @@ import BgOverlay from "../common/overlay/bg-overlay";
 import OverlayModal from "../common/overlay/overlay-modal";
 import "./home.css";
 
-//TODO
-// - trabajar la idea de mas dinamismo en la home.
-//    - ref: https://wpdean.com/css-text-animation/
-//    - posible: Slide with Me, para un texto central.
-//    - agrandar botones y forma
-//    - posible "beyond code" usando Cool Beans Text Moves. (https://codepen.io/hkmDesigner/pen/zwJPgL)
-
 export const Home = () => {
   const { t } = useTranslation();
   const navigate = useNavigate();
